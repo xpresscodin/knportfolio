@@ -165,7 +165,7 @@ export default function Layout() {
     <div
       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-28 pb-10"
       style={{
-        backgroundImage: "url('/src/assets/images/4882341.jpg')",
+        backgroundImage: "url('/assets/images/4882341.jpg')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
