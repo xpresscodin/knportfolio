@@ -13,7 +13,7 @@
 // export default function Sidebar() {
 //   return (
 //     <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white p-6 flex flex-col items-center gap-8">
-//       <img src="/src/assets/images/1.jpg" alt="Profile" className="rounded-full w-32 h-32 object-cover border-4 border-accent" />
+//       <img src="/assets/images/1.jpg" alt="Profile" className="rounded-full w-32 h-32 object-cover border-4 border-accent" />
 //       <nav className="flex flex-col gap-4">
 //         {navItems.map(({ path, label, icon }) => (
 //           <NavLink
