@@ -126,7 +126,7 @@
 //     <div
 //       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-20 pb-10"
 //       // style={{
-//       //   backgroundImage: "url('/src/assets/images/1.jpg')",
+//       //   backgroundImage: "url('/assets/images/1.jpg')",
 //       //   backgroundSize: 'cover',
 //       //   backgroundRepeat: 'no-repeat',
 //       //   backgroundPosition: 'center',
