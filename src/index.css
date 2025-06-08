@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-900 dark:bg-dark dark:text-white transition-colors duration-300;
+}
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+@media (prefers-color-scheme: light) {
+  body {
+    @apply bg-light text-white;
+  }
+}
+
