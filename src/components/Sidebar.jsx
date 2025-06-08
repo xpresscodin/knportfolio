@@ -61,7 +61,7 @@ export default function Sidebar() {
       {/* Floating Profile Image */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#ffffff] p-1 rounded-2xl shadow-lg border-4 border-white z-20">
         <img
-          src="/src/assets/images/1.jpg"
+          src="/assets/images/1.jpg"
           alt="Profile"
           className="w-full h-full object-cover rounded-2xl"
         />
