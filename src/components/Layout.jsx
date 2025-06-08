@@ -156,6 +156,106 @@
 //     </div>
 //   )
 // }
+// import Sidebar from './Sidebar'
+// import Header from './Header'
+// import { Outlet } from 'react-router-dom'
+
+// export default function Layout() {
+//   return (
+//     <div
+//       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-28 pb-10"
+//       style={{
+//         backgroundImage: "url('/assets/images/4882341.jpg')",
+//         backgroundSize: 'cover',
+//         backgroundRepeat: 'no-repeat',
+//         backgroundPosition: 'center',
+//       }}
+//     >
+//       <div className="max-w-7xl w-full flex gap-6 min-h-screen">
+//         {/* Sidebar: Sticky and full height */}
+//         <aside className="hidden md:block w-[300px] sticky top-28 self-start">
+//           <Sidebar />
+//         </aside>
+
+//         {/* Main Content Area */}
+//         <section className="flex-1 flex flex-col items-center">
+//           <div className="relative w-full flex flex-col items-center">
+//             {/* Floating Menu */}
+//             <div className="absolute -top-8 right-0 z-10">
+//             {/* <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10"> */}
+//               <Header />
+//             </div>
+//             {/* Main Card */}
+//             <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col min-h-[500px] w-full mt-8">
+//               {/* Centered Title Example */}
+//               <h1 className="text-3xl font-bold text-center mb-6 text-primary">
+//                 {/* You can pass your title as a prop or render it in each page */}
+//                 {/* Example: Portfolio */}
+                
+//               </h1>
+//               <div className="flex-1">
+//                 <Outlet />
+//               </div>
+//             </div>
+//           </div>
+//         </section>
+//       </div>
+//     </div>
+//   )
+// }
+
+// import Sidebar from './Sidebar'
+// import Header from './Header'
+// import { Outlet } from 'react-router-dom'
+
+// export default function Layout() {
+//   return (
+//     <div
+//       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-28 pb-10"
+//       style={{
+//         backgroundImage: "url('/assets/images/4882341.jpg')",
+//         backgroundSize: 'cover',
+//         backgroundRepeat: 'no-repeat',
+//         backgroundPosition: 'center',
+//       }}
+//     >
+//       <div className="max-w-7xl w-full flex flex-col md:flex-row gap-6 min-h-screen">
+
+//         {/* === ✅ MOBILE SIDEBAR TOP === */}
+//         <div className="md:hidden mb-6">
+//           <Sidebar />
+//         </div>
+
+//         {/* === DESKTOP SIDEBAR === */}
+//         <aside className="hidden md:block w-[300px] sticky top-28 self-start">
+//           <Sidebar />
+//         </aside>
+
+//         {/* === MAIN CONTENT + MENU === */}
+//         <section className="flex-1 flex flex-col items-center">
+//           <div className="relative w-full flex flex-col items-center">
+
+//             {/* ✅ Menu: Float on desktop, inline on mobile */}
+//             <div className="absolute md:-top-8 md:right-0 md:z-10 w-full md:w-auto">
+//               <Header />
+//             </div>
+
+//             {/* === MAIN CARD === */}
+//             <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col min-h-[500px] w-full mt-24 md:mt-8">
+//               <h1 className="text-3xl font-bold text-center mb-6 text-primary">
+//                 {/* Page-specific titles */}
+//               </h1>
+//               <div className="flex-1">
+//                 <Outlet />
+//               </div>
+//             </div>
+
+//           </div>
+//         </section>
+//       </div>
+//     </div>
+//   )
+// }
 import Sidebar from './Sidebar'
 import Header from './Header'
 import { Outlet } from 'react-router-dom'
@@ -171,32 +271,38 @@ export default function Layout() {
         backgroundPosition: 'center',
       }}
     >
-      <div className="max-w-7xl w-full flex gap-6 min-h-screen">
-        {/* Sidebar: Sticky and full height */}
+      <div className="max-w-7xl w-full flex flex-col md:flex-row gap-6 min-h-screen">
+
+        {/* === MOBILE SIDEBAR === */}
+        <div className="md:hidden mb-6">
+          <Sidebar />
+        </div>
+
+        {/* === DESKTOP SIDEBAR === */}
         <aside className="hidden md:block w-[300px] sticky top-28 self-start">
           <Sidebar />
         </aside>
 
-        {/* Main Content Area */}
+        {/* === MAIN CONTENT + MENU === */}
         <section className="flex-1 flex flex-col items-center">
           <div className="relative w-full flex flex-col items-center">
-            {/* Floating Menu */}
-            <div className="absolute -top-8 right-0 z-10">
-            {/* <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10"> */}
+
+            {/* ✅ Menu stays in flow */}
+            <div className="w-full">
+              
               <Header />
             </div>
-            {/* Main Card */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col min-h-[500px] w-full mt-8">
-              {/* Centered Title Example */}
+
+            {/* === MAIN CARD === */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col min-h-[500px] w-full mt-6">
               <h1 className="text-3xl font-bold text-center mb-6 text-primary">
-                {/* You can pass your title as a prop or render it in each page */}
-                {/* Example: Portfolio */}
-                
+                {/* Dynamic page titles here if needed */}
               </h1>
               <div className="flex-1">
                 <Outlet />
               </div>
             </div>
+
           </div>
         </section>
       </div>
