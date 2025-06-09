@@ -171,8 +171,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import projects from '../data/projects'
 
 const categoryBanners = {
-  GP1: { img: 'assets/images/teach.jpg', text: <>Guiding Principle 1 -<br />Teacher knows the subject that she teaches</> },
-  GP2: { img: '/images/gp2-banner.jpg', text: <>Guiding Principle 2 -<br />The teacher knows how to teach the subject for which she is responsible</> },
+  GP1: { img: '/assets/images/teach.jpg', text: <>Guiding Principle 1 -<br />Teacher knows the subject that she teaches</> },
+  GP2: { img: '/assets/images/teach2.jpg', text: <>Guiding Principle 2 -<br />The teacher knows how to teach the subject for which she is responsible</> },
   GP3: { img: '/images/gp3-banner.jpg', text: <>Guiding Principle 3 -<br />Teacher is committed to the children in her care- managing the learning process through addressing diversity and promoting character development. </>},
   GP4: { img: '/images/gp4-banner.jpg', text: <>Guiding Principle 4 -<br />Professional Development</> },
   GP5: { img: '/images/gp5-banner.jpg', text: <>Guiding Principle 5 -<br />Teacher Interactions</> },
@@ -227,7 +227,7 @@ export default function Portfolio() {
           <div key={cat.name} className="relative group">
             <button
               onClick={() => handleCategoryClick(cat.name)}
-              className={`flex items-center justify-center gap-2 px-6 sm:px-6 py-2 rounded-full font-medium transition duration-200 shadow-sm border text-sm sm:text-base whitespace-nowrap
+              className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-2 rounded-full font-medium transition duration-200 shadow-sm border text-sm sm:text-base whitespace-nowrap
                 ${
                   selectedCategory === cat.name && !selectedSub
                     ? 'bg-primary text-white border-primary'
@@ -238,7 +238,7 @@ export default function Portfolio() {
             </button>
 
             {/* Dropdown Submenu */}
-            <div className="absolute left-0 mt-2 hidden group-hover:block z-50 min-w-[220px] bg-white border rounded shadow">
+            <div className="absolute left-0 mt-0 hidden group-hover:block z-50 min-w-[220px] bg-white border rounded shadow">
               {cat.sub.map(subItem => (
                 <button
                   key={subItem}
