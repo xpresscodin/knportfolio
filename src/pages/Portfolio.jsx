@@ -171,12 +171,12 @@ import { useParams, useNavigate } from 'react-router-dom'
 import projects from '../data/projects'
 
 const categoryBanners = {
-  GP1: { img: '/images/gp1-banner.jpg', text: <>Guiding Principle 1 -<br />Teacher knows the subject that he teaches</> },
-  GP2: { img: '/images/gp2-banner.jpg', text: <>Guiding Principle 2 -<br />Teacher knows the subject that he teaches</> },
-  GP3: { img: '/images/gp3-banner.jpg', text: <>Guiding Principle 3 -<br />Teacher knows the subject that he teaches</>},
-  GP4: { img: '/images/gp4-banner.jpg', text: <>Guiding Principle 4 -<br />Teacher knows the subject that he teaches</> },
-  GP5: { img: '/images/gp5-banner.jpg', text: <>Guiding Principle 5 -<br />Teacher knows the subject that he teaches</> },
-  GP6: { img: '/images/gp6-banner.jpg', text: <>Guiding Principle 6 -<br />Teacher knows the subject that he teaches</> },
+  GP1: { img: 'assets/images/teach.jpg', text: <>Guiding Principle 1 -<br />Teacher knows the subject that she teaches</> },
+  GP2: { img: '/images/gp2-banner.jpg', text: <>Guiding Principle 2 -<br />The teacher knows how to teach the subject for which she is responsible</> },
+  GP3: { img: '/images/gp3-banner.jpg', text: <>Guiding Principle 3 -<br />Teacher is committed to the children in her care- managing the learning process through addressing diversity and promoting character development. </>},
+  GP4: { img: '/images/gp4-banner.jpg', text: <>Guiding Principle 4 -<br />Professional Development</> },
+  GP5: { img: '/images/gp5-banner.jpg', text: <>Guiding Principle 5 -<br />Teacher Interactions</> },
+  GP6: { img: '/images/gp6-banner.jpg', text: <>Guiding Principle 6 -<br /></> },
 }
 
 const categories = [
@@ -227,7 +227,7 @@ export default function Portfolio() {
           <div key={cat.name} className="relative group">
             <button
               onClick={() => handleCategoryClick(cat.name)}
-              className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-2 rounded-full font-medium transition duration-200 shadow-sm border text-sm sm:text-base whitespace-nowrap
+              className={`flex items-center justify-center gap-2 px-6 sm:px-6 py-2 rounded-full font-medium transition duration-200 shadow-sm border text-sm sm:text-base whitespace-nowrap
                 ${
                   selectedCategory === cat.name && !selectedSub
                     ? 'bg-primary text-white border-primary'
