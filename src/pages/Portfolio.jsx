@@ -173,10 +173,10 @@ import projects from '../data/projects'
 const categoryBanners = {
   GP1: { img: '/assets/images/teach.jpg', text: <>Guiding Principle 1 -<br />Teacher knows the subject that she teaches</> },
   GP2: { img: '/assets/images/teach2.jpg', text: <>Guiding Principle 2 -<br />The teacher knows how to teach the subject for which she is responsible</> },
-  GP3: { img: '/images/gp3-banner.jpg', text: <>Guiding Principle 3 -<br />Teacher is committed to the children in her care- managing the learning process through addressing diversity and promoting character development. </>},
-  GP4: { img: '/images/gp4-banner.jpg', text: <>Guiding Principle 4 -<br />Professional Development</> },
-  GP5: { img: '/images/gp5-banner.jpg', text: <>Guiding Principle 5 -<br />Teacher Interactions</> },
-  GP6: { img: '/images/gp6-banner.jpg', text: <>Guiding Principle 6 -<br /></> },
+  GP3: { img: '/assets/images/teach3.png', text: <>Guiding Principle 3 -<br />Teacher is committed to the children in her care- managing the learning process through addressing diversity and promoting character development. </>},
+  GP4: { img: '/assets/images/teach4.png', text: <>Guiding Principle 4 -<br />Professional Development</> },
+  GP5: { img: '/assets/images/teach5.png', text: <>Guiding Principle 5 -<br />Teacher Interactions</> },
+  // GP6: { img: '/assets/images/teach6.png', text: <>Guiding Principle 6 -<br /></> },
 }
 
 const categories = [
