@@ -300,7 +300,7 @@ const projects = [
       {
         type: 'image',
         src: '/images/cert2.jpg',
-        alt: 'Certificate 2',
+        alt: 'Certificate ',
       },
     ],
   },
