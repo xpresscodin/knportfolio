@@ -12,21 +12,57 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/src/assets/images/teaching/teach1.jpeg',
-        alt: 'Teaching Plan',
+        src: '/assets/images/teaching/1.jpg',
+        alt: 'Interaction with smartboard - matching activity',
       },
       {
-        type: 'video',
-        src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        type: 'paragraph',
+        content: 'Interaction with smartboard - matching activity',
       },
       {
-        type: 'slideshow',
-        images: [
-          '/images/activity1.jpg',
-          '/images/activity2.jpg',
-          '/images/activity3.jpg',
-        ],
+        type: 'image',
+        src: '/assets/images/teaching/2.jpg',
+        alt: 'Class collaboration with creative expression',
       },
+      {
+        type: 'paragraph',
+        content: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/teaching/3.jpg',
+        alt: 'Unscrambling the months of the year on the smartboard',
+      },
+      {
+        type: 'paragraph',
+        content: 'Unscrambling the months of the year on the smartboard',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/teaching/4.jpg',
+        alt: 'Peer reading moment - One student is reading for her peers after reading was modelled by teacher',
+      },
+      {
+        type: 'paragraph',
+        content: 'Peer reading moment - One student is reading for her peers after reading was modelled by teacher',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/teaching/5.jpg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'paragraph',
+        content: 'Class collaboration with creative expression',
+      },
+      // {
+      //   type: 'slideshow',
+      //   images: [
+      //     '/images/activity1.jpg',
+      //     '/images/activity2.jpg',
+      //     '/images/activity3.jpg',
+      //   ],
+      // },
     ],
   },
   {
