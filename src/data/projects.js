@@ -12,7 +12,7 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/teaching/1.jpg',
+        src: '/assets/images/teaching/1.jpeg',
         alt: 'Interaction with smartboard - matching activity',
       },
       {
@@ -21,7 +21,7 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/teaching/2.jpg',
+        src: '/assets/images/teaching/2.jpeg',
         alt: 'Class collaboration with creative expression',
       },
       {
@@ -30,7 +30,7 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/teaching/3.jpg',
+        src: '/assets/images/teaching/3.jpeg',
         alt: 'Unscrambling the months of the year on the smartboard',
       },
       {
@@ -39,7 +39,7 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/teaching/4.jpg',
+        src: '/assets/images/teaching/4.jpeg',
         alt: 'Peer reading moment - One student is reading for her peers after reading was modelled by teacher',
       },
       {
@@ -48,7 +48,7 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/teaching/5.jpg',
+        src: '/assets/images/teaching/5.jpeg',
         alt: 'Class collaboration with creative expression',
       },
       {
