@@ -106,21 +106,58 @@ const projects = [
   {
     id: 4,
     category: 'GP2',
-    sub: 'Action research/Case study',
-    title: 'Action Research: Impact of Interactive Tools',
+    sub: 'Lesson Plans',
+    title: 'Detailed Lesson Plans',
     blocks: [
       {
-        type: 'paragraph',
-        content: 'This case study explores the impact of interactive whiteboards on student engagement.',
+        type: 'powerpoint',
+        src: '/assets/images/powerpoints/_week 6-7 ¿Dónde vives tú_ -.pptx',
+        title: 'PowerPoint 1',
       },
       {
-        type: 'video',
-        src: 'https://www.youtube.com/embed/kXYiU_JCYtU',
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/_Weeks 2-3 - ¿Quién eres tú_.pptx',
+        title: 'PowerPoint 2',
       },
       {
-        type: 'image',
-        src: '/images/research-summary.jpg',
-        alt: 'Research Summary',
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/_Weeks -9-10- ¿Cómo es tu casa_.pptx',
+        title: 'PowerPoint 3',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/Grade 7 Week 7-9 - ¿Cómo eres tú_.pptx',
+        title: 'PowerPoint 4',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/Grade 9 - Lávate las manos antes de cocinar - El imperativo.pptx',
+        title: 'PowerPoint 5',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/La Buena Salud - Weeks 3 - 5.pptx',
+        title: 'PowerPoint 6',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/Week 2  COUNTRIES AND NATIONALITIES GR7 .pptx',
+        title: 'PowerPoint 7',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/week 8-9 ¿Cuántos años tienes_.pptx',
+        title: 'PowerPoint 7',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/Week 2- Grade 10 Ppt- New Year Week - Review of future tense (1).pptx',
+        title: 'PowerPoint 7',
+      },
+      {
+        type: 'powerpoint',
+        src: '/assets/images//powerpoints/Week 8 - Week 9 - Comparativos- Los deportes.pptx',
+        title: 'PowerPoint 7',
       },
     ],
   },
