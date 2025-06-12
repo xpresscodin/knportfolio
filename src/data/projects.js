@@ -69,7 +69,7 @@ const projects = [
     id: 2,
     category: 'GP1',
     sub: 'Subject Connectivity and Relevant Checklist',
-    title: 'Curriculum Relevance Checklis',
+    title: 'Curriculum Relevance Checklist',
     blocks: [
       {
         type: 'paragraph',

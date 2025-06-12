@@ -16,7 +16,7 @@ export default function Resume() {
           </ul>
         </div>
         <a
-          href="/resume.pdf"
+          href="/assets/images/Kenise Needham Farquharson's Resume - ep.pdf"
           target="_blank"
           rel="noreferrer"
           className="inline-block bg-accent text-white px-4 py-2 rounded mt-4"
