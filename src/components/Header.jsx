@@ -101,7 +101,7 @@ const nav = [
   { label: 'Home', to: '/', icon: <FaUser /> },
   { label: 'Resume', to: '/resume', icon: <FaBriefcase /> },
   { label: 'Portfolio', to: '/portfolio', icon: <FaImages /> },
-  { label: 'Blog', to: '/blog', icon: <FaBlog /> },
+  // { label: 'Blog', to: '/blog', icon: <FaBlog /> },
   { label: 'Contact', to: '/contact', icon: <FaEnvelope /> },
 ]
 
