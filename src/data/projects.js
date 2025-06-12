@@ -400,23 +400,23 @@ const projects = [
       },
     ],
   },
-  {
-    id: 19,
-    category: 'GP6',
-    sub: '',
-    title: 'GP6',
-    blocks: [
-      {
-        type: 'image',
-        src: '/images/community.jpg',
-        alt: 'Community Event',
-      },
-      {
-        type: 'paragraph',
-        content: 'Images and descriptions from cleanup drives and volunteer activities.',
-      },
-    ],
-  },
+  // {
+  //   id: 19,
+  //   category: 'GP6',
+  //   sub: '',
+  //   title: 'GP6',
+  //   blocks: [
+  //     {
+  //       type: 'image',
+  //       src: '/images/community.jpg',
+  //       alt: 'Community Event',
+  //     },
+  //     {
+  //       type: 'paragraph',
+  //       content: 'Images and descriptions from cleanup drives and volunteer activities.',
+  //     },
+  //   ],
+  // },
 ]
 
 export default projects
