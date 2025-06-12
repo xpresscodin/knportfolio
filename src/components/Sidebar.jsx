@@ -95,7 +95,7 @@ export default function Sidebar() {
         {/* <p><strong>🎂 Birthday:</strong> May 27, 1980</p> */}
       </div>
 
-      <a href="/resume.pdf" className="bg-primary text-white px-4 py-2 rounded inline-block hover:bg-red-600 transition">
+      <a href="/assets/images/Kenise Needham Farquharson's Resume - ep.pdf" className="bg-primary text-white px-4 py-2 rounded inline-block hover:bg-red-600 transition">
         📥 Download CV
       </a>
     </div>

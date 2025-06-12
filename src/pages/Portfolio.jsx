@@ -181,11 +181,11 @@ const categoryBanners = {
 
 const categories = [
   { name: 'GP1', content: 'General content for GP1. You can add images, text, etc. here.', sub: ['Teaching Activities and Subject Goals', 'Subject Connectivity and Relevant Checklist', 'Student paper /Essays/ Creative works'] },
-  { name: 'GP2', content: 'General content for GP2.', sub: ['Action research/Case study'] },
-  { name: 'GP3', content: 'General content for GP3.', sub: ['Teachers Incentive to Students', 'Strategies to Develop Critical Thinking in Students', 'Assessment Instruments /Records', 'Students overall development', 'Classroom Rules and Procedures'] },
+  { name: 'GP2', content: 'General content for GP2.', sub: ['Lesson Plans'] },
+  { name: 'GP3', content: 'General content for GP3.', sub: ['Teachers Incentive to Students', 'Strategies to Develop Critical Thinking in Students'] },
   { name: 'GP4', content: 'General content for GP4.', sub: ['Professional Development', 'Assessment Records', 'Action Research', 'Professional Membership', 'Certificates', 'Presentations', 'Observations'] },
   { name: 'GP5', content: 'General content for GP5.', sub: ['Interaction with parents', 'Community Involvement'] },
-  { name: 'GP6', content: 'General content for GP6.', sub: [''] },
+  // { name: 'GP6', content: 'General content for GP6.', sub: [''] },
 ]
 
 export default function Portfolio() {

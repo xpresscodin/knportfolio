@@ -106,8 +106,8 @@ const projects = [
   {
     id: 4,
     category: 'GP2',
-    sub: 'Lesson Plans ',
-    title: 'Lesson Plans',
+    sub: 'Lesson Plans',
+    title: 'Lesson Plans and more',
     blocks: [
       {
         type: 'powerpoint',
@@ -387,7 +387,7 @@ const projects = [
     id: 18,
     category: 'GP5',
     sub: 'Community Involvement',
-    title: 'Community Service Projects',
+    title: 'Community Service Project',
     blocks: [
       {
         type: 'image',
