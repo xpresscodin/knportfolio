@@ -296,37 +296,37 @@ const projects = [
     blocks: [
       {
         type: 'image',
-        src: '/src/assets/images/Development/1.jpeg',
+        src: '/assets/images/Development/1.jpeg',
         alt: 'Workshop 1',
         description: 'Attending a professional development workshop focused on innovative teaching strategies.'
       },
       {
         type: 'image',
-        src: '/src/assets/images/Development/2.jpeg',
+        src: '/assets/images/Development/2.jpeg',
         alt: 'Seminar 2',
         description: 'Participating in a seminar about student engagement and classroom management.'
       },
       {
         type: 'image',
-        src: '/src/assets/images/Development/3.jpeg',
+        src: '/assets/images/Development/3.jpeg',
         alt: 'Collaboration 3',
         description: 'Collaborative session with colleagues to develop new curriculum materials.'
       },
       {
         type: 'image',
-        src: '/src/assets/images/Development/4.jpeg',
+        src: '/assets/images/Development/4.jpeg',
         alt: 'Training 4',
         description: 'Training on integrating technology into the classroom.'
       },
       {
         type: 'image',
-        src: '/src/assets/images/Development/5.jpeg',
+        src: '/assets/images/Development/5.jpeg',
         alt: 'Conference 5',
         description: 'Presenting at an educational conference.'
       },
       {
         type: 'image',
-        src: '/src/assets/images/Development/6.jpeg',
+        src: '/assets/images/Development/6.jpeg',
         alt: 'Workshop 6',
         description: 'Workshop on assessment and feedback best practices.'
       },
