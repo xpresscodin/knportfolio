@@ -342,7 +342,7 @@ const projects = [
     blocks: [
       {
         type: 'paragraph',
-        content: 'Summary of parent-teacher conferences, call logs, and newsletters sent home.',
+        content: 'Summary of parent-teacher',
       },
     ],
   },
