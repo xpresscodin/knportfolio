@@ -91,7 +91,7 @@ export default function Sidebar() {
       <div className="text-left text-sm space-y-3 mb-6 text-gray-700">
         <p><strong>📞 Phone:</strong> +1(876)-323-6986</p>
         <p><strong>📍 Location:</strong> Kingston, Jamaica</p>
-        <p><strong>✉ Email:</strong> keniseneedham@yahoo.com</p>
+        <p><strong>✉ Email:</strong> keniseneedham99@gmail.com</p>
         {/* <p><strong>🎂 Birthday:</strong> May 27, 1980</p> */}
       </div>
 

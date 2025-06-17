@@ -110,54 +110,54 @@ const projects = [
     title: 'Lesson Plans and more',
     blocks: [
       {
-        type: 'powerpoint',
-        src: '/assets/images/powerpoints/_week 6-7 ¿Dónde vives tú_ -.pptx',
-        title: 'PowerPoint 1',
+        type: 'pdf',
+        src: '/assets/images/presentation/_Weeks 2-3 - ¿Quién eres tú_.pdf',
+        title: 'Lesson Plan: ¿Quién eres tú?'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/_Weeks 2-3 - ¿Quién eres tú_.pptx',
-        title: 'PowerPoint 2',
+        type: 'pdf',
+        src: '/assets/images/presentation/_Weeks -9-10- ¿Cómo es tu casa_.pdf',
+        title: 'Lesson Plan: ¿Cómo es tu casa?'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/_Weeks -9-10- ¿Cómo es tu casa_.pptx',
-        title: 'PowerPoint 3',
+        type: 'pdf',
+        src: '/assets/images/presentation/_week 6-7 ¿Dónde vives tú_.pdf',
+        title: 'Lesson Plan: ¿Dónde vives tú?'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/Grade 7 Week 7-9 - ¿Cómo eres tú_.pptx',
-        title: 'PowerPoint 4',
+        type: 'pdf',
+        src: '/assets/images/presentation/week 8-9 ¿Cuántos años tienes_ .pdf',
+        title: 'Lesson Plan: ¿Cuántos años tienes?'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/Grade 9 - Lávate las manos antes de cocinar - El imperativo.pptx',
-        title: 'PowerPoint 5',
+        type: 'pdf',
+        src: '/assets/images/presentation/Week 8 - Week 9 - Comparativos- Los deportes.pdf',
+        title: 'Lesson Plan: Comparativos- Los deportes'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/La Buena Salud - Weeks 3 - 5.pptx',
-        title: 'PowerPoint 6',
+        type: 'pdf',
+        src: '/assets/images/presentation/Week 2- Grade 10 Ppt- New Year Week - Review of future tense (1).pdf',
+        title: 'Lesson Plan: Review of future tense (1)'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/Week 2  COUNTRIES AND NATIONALITIES GR7 .pptx',
-        title: 'PowerPoint 7',
+        type: 'pdf',
+        src: '/assets/images/presentation/Week 2  COUNTRIES AND NATIONALITIES GR7 .pdf',
+        title: 'Lesson Plan: Countries and Nationalities (GR7)'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/week 8-9 ¿Cuántos años tienes_.pptx',
-        title: 'PowerPoint 7',
+        type: 'pdf',
+        src: '/assets/images/presentation/La Buena Salud - Weeks 3 - 5.pdf',
+        title: 'Lesson Plan: La Buena Salud - Weeks 3 - 5'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/Week 2- Grade 10 Ppt- New Year Week - Review of future tense (1).pptx',
-        title: 'PowerPoint 7',
+        type: 'pdf',
+        src: '/assets/images/presentation/Grade 9 - Lávate las manos antes de cocinar - El imperativo.pdf',
+        title: 'Lesson Plan: Lávate las manos antes de cocinar - El imperativo'
       },
       {
-        type: 'powerpoint',
-        src: '/assets/images//powerpoints/Week 8 - Week 9 - Comparativos- Los deportes.pptx',
-        title: 'PowerPoint 7',
+        type: 'pdf',
+        src: '/assets/images/presentation/Grade 7 Week 7-9 - ¿Cómo eres tú_.pdf',
+        title: 'Lesson Plan: ¿Cómo eres tú? (Grade 7 Week 7-9)'
       },
     ],
   },
@@ -266,64 +266,6 @@ const projects = [
 
   // === GP4 ===
   {
-    id: 10,
-    category: 'GP4',
-    sub: 'Professional Development',
-    title: 'Courses & Workshops',
-    blocks: [
-      {
-        type: 'slideshow',
-        images: ['/images/workshop1.jpg', '/images/workshop2.jpg'],
-      },
-      {
-        type: 'paragraph',
-        content: 'Certificates and attendance from PD courses attended during the school year.',
-      },
-    ],
-  },
-  {
-    id: 11,
-    category: 'GP4',
-    sub: 'Assessment Records',
-    title: 'Formal Assessment Logs',
-    blocks: [
-      {
-        type: 'paragraph',
-        content: 'Screenshots of spreadsheets and student grade logs.',
-      },
-      {
-        type: 'image',
-        src: '/images/records.jpg',
-        alt: 'Assessment Records',
-      },
-    ],
-  },
-  {
-    id: 12,
-    category: 'GP4',
-    sub: 'Action Research',
-    title: 'Teacher-led Research Paper',
-    blocks: [
-      {
-        type: 'paragraph',
-        content: 'Paper describing research conducted to improve group-based learning in math.',
-      },
-    ],
-  },
-  {
-    id: 13,
-    category: 'GP4',
-    sub: 'Professional Membership',
-    title: 'Professional Groups',
-    blocks: [
-      {
-        type: 'image',
-        src: '/images/membership-card.jpg',
-        alt: 'Membership',
-      },
-    ],
-  },
-  {
     id: 14,
     category: 'GP4',
     sub: 'Certificates',
@@ -331,41 +273,62 @@ const projects = [
     blocks: [
       {
         type: 'image',
-        src: '/images/cert1.jpg',
-        alt: 'Certificate 1',
+        src: '/assets/images/certificate.jpeg',
+        alt: 'Certificate',
+      },
+      // {
+      //   type: 'image',
+      //   src: '/images/cert1.jpg',
+      //   alt: 'Certificate 1',
+      // },
+      // {
+      //   type: 'image',
+      //   src: '/images/cert2.jpg',
+      //   alt: 'Certificate ',
+      // },
+    ],
+  },
+  {
+    id: 19,
+    category: 'GP4',
+    sub: 'Professional Development',
+    title: 'Professional Development Activities',
+    blocks: [
+      {
+        type: 'image',
+        src: '/src/assets/images/Development/1.jpeg',
+        alt: 'Workshop 1',
+        description: 'Attending a professional development workshop focused on innovative teaching strategies.'
       },
       {
         type: 'image',
-        src: '/images/cert2.jpg',
-        alt: 'Certificate ',
-      },
-    ],
-  },
-  {
-    id: 15,
-    category: 'GP4',
-    sub: 'Presentations',
-    title: 'Workshop Presentations',
-    blocks: [
-      {
-        type: 'video',
-        src: 'https://www.youtube.com/embed/V-_O7nl0Ii0',
+        src: '/src/assets/images/Development/2.jpeg',
+        alt: 'Seminar 2',
+        description: 'Participating in a seminar about student engagement and classroom management.'
       },
       {
-        type: 'paragraph',
-        content: 'Recordings of sessions and slide decks used during training.',
+        type: 'image',
+        src: '/src/assets/images/Development/3.jpeg',
+        alt: 'Collaboration 3',
+        description: 'Collaborative session with colleagues to develop new curriculum materials.'
       },
-    ],
-  },
-  {
-    id: 16,
-    category: 'GP4',
-    sub: 'Observations',
-    title: 'Class Observations Feedback',
-    blocks: [
       {
-        type: 'paragraph',
-        content: 'Feedback from school administrators and fellow teachers after observation.',
+        type: 'image',
+        src: '/src/assets/images/Development/4.jpeg',
+        alt: 'Training 4',
+        description: 'Training on integrating technology into the classroom.'
+      },
+      {
+        type: 'image',
+        src: '/src/assets/images/Development/5.jpeg',
+        alt: 'Conference 5',
+        description: 'Presenting at an educational conference.'
+      },
+      {
+        type: 'image',
+        src: '/src/assets/images/Development/6.jpeg',
+        alt: 'Workshop 6',
+        description: 'Workshop on assessment and feedback best practices.'
       },
     ],
   },
