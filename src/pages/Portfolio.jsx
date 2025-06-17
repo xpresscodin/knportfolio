@@ -180,11 +180,11 @@ const categoryBanners = {
 }
 
 const categories = [
-  { name: '', content: '', sub: ['Teaching Activities and Subject Goals'] },
-  { name: '', content: '', sub: ['Lesson Plans'] },
-  { name: '', content: '', sub: ['Teachers Incentive to Students', 'Strategies to Develop Critical Thinking in Students'] },
-  { name: '', content: '', sub: ['Professional Development', 'Certificates'] },
-  { name: '', content: '', sub: ['Interaction with parents'] },
+  { name: 'GP1', content: '', sub: ['Teaching Activities and Subject Goals'] },
+  { name: 'GP2', content: '', sub: ['Lesson Plans'] },
+  { name: 'GP3', content: '', sub: ['Teachers Incentive to Students', 'Strategies to Develop Critical Thinking in Students'] },
+  { name: 'GP4', content: '', sub: ['Professional Development', 'Certificates'] },
+  { name: 'GP5', content: '', sub: ['Interaction with parents'] },
   // { name: 'GP6', content: 'General content for GP6.', sub: [''] },
 ]
 
