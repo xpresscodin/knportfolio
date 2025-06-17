@@ -5,6 +5,7 @@ import Resume from './pages/Resume'
 import Portfolio from './pages/Portfolio'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
+import Reviews from './pages/Reviews'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/portfolio/:category/:sub" element={<Portfolio />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="reviews" element={<Reviews />} />
         </Route>
       </Routes>
     </BrowserRouter>

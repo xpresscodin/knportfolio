@@ -95,7 +95,7 @@
 // }
 
 import { NavLink } from 'react-router-dom'
-import { FaUser, FaBriefcase, FaImages, FaBlog, FaEnvelope } from 'react-icons/fa'
+import { FaUser, FaBriefcase, FaImages, FaBlog, FaEnvelope, FaStar } from 'react-icons/fa'
 
 const nav = [
   { label: 'Home', to: '/', icon: <FaUser /> },
@@ -103,6 +103,7 @@ const nav = [
   { label: 'Portfolio', to: '/portfolio', icon: <FaImages /> },
   // { label: 'Blog', to: '/blog', icon: <FaBlog /> },
   { label: 'Contact', to: '/contact', icon: <FaEnvelope /> },
+  { label: 'Student Reviews', to: '/reviews', icon: <FaStar /> },
 ]
 
 export default function Header() {
