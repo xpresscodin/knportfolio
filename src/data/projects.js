@@ -330,6 +330,30 @@ const projects = [
         alt: 'Workshop 6',
         description: 'Workshop on assessment and feedback best practices.'
       },
+      {
+        type: 'image',
+        src: '/assets/images/Development/7.jpeg',
+        alt: 'Professional Development Event',
+        description: 'Participating in a professional development event with colleagues.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/8.jpeg',
+        alt: 'Professional Development Group',
+        description: 'Group photo from a professional development workshop.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/9.jpeg',
+        alt: 'Professional Development Team',
+        description: 'Team collaboration during a professional development event.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/10.jpeg',
+        alt: 'Professional Development Gathering',
+        description: 'Gathering of educators at a professional development session.'
+      },
     ],
   },
 
