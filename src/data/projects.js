@@ -22,11 +22,11 @@ const projects = [
       {
         type: 'image',
         src: '/assets/images/degree.jpeg',
-        alt: 'Bachelor of Arts in Secondary Teacher Education Diploma',
+        alt: '',
       },
       {
         type: 'paragraph',
-        content: 'Bachelor of Arts in Secondary Teacher Education Diploma.'
+        content: '.'
       }
     ]
   },
