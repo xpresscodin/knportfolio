@@ -1,24 +1,106 @@
 const projects = [
-  // === GP1 ===
+  // === GP1: Subject Content Knowledge ===
   {
-    id: 1,
+    id: 20,
     category: 'GP1',
-    sub: 'Teaching Activities and Subject Goals',
+    sub: 'Knows the subject content', // 1.1
     title: 'Teaching Goals & Lesson Strategies',
     blocks: [
       {
         type: 'paragraph',
-        content: 'This section outlines the objectives of the lesson plans and the subject-specific strategies used to engage students.',
+        content: ''
       },
       {
         type: 'image',
-        src: '/assets/images/Teaching/1.jpeg',
-        alt: 'Interaction with smartboard - matching activity',
+        src: '/assets/images/certificate.jpeg',
+        alt: 'Certificate',
       },
       {
         type: 'paragraph',
-        content: 'Interaction with smartboard - matching activity',
+        content: 'Certificate of acheivement.'
       },
+      {
+        type: 'image',
+        src: '/assets/images/degree.jpeg',
+        alt: 'Bachelor of Arts in Secondary Teacher Education Diploma',
+      },
+      {
+        type: 'paragraph',
+        content: 'Bachelor of Arts in Secondary Teacher Education Diploma.'
+      }
+    ]
+  },
+  {
+    id: 21,
+    category: 'GP1',
+    sub: 'Relates concepts to other subjects', // 1.2
+    title: 'Class collaboration with creative expression',
+    blocks: [
+      // No blocks, consider adding relevant content or comment out if not used
+    ]
+  },
+  {
+    id: 22,
+    category: 'GP1',
+    sub: 'Understands subject structure in curriculum', // 1.3
+    title: 'Unscrambling the months of the year on the smartboard',
+    blocks: [
+      // No blocks, consider adding relevant content or comment out if not used
+    ]
+  },
+  {
+    id: 23,
+    category: 'GP1',
+    sub: 'Relates subject to national development', // 1.4
+    title: 'Peer reading moment',
+    blocks: [
+      // No blocks, consider adding relevant content or comment out if not used
+    ]
+  },
+  {
+    id: 2,
+    category: 'GP1',
+    sub: 'Subject Connectivity and Relevant Checklist', // 1.5
+    title: 'Curriculum Relevance Checklist',
+    blocks: [
+      {
+        type: 'paragraph',
+        content: 'Checklist showing how subject matter is aligned with real-world application and connects to cross-curricular goals.',
+      },
+      {
+        type: 'image',
+        src: '/images/checklist.jpg',
+        alt: 'Connectivity Checklist',
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: 'GP1',
+    sub: 'Student paper /Essays/ Creative works', // 1.6
+    title: 'Student Creative Work Showcase',
+    blocks: [
+      {
+        type: 'slideshow',
+        images: [
+          '/images/essay1.jpg',
+          '/images/essay2.jpg',
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: 'These are samples of essays, poetry, and creative assignments submitted by students.',
+      },
+    ],
+  },
+
+  // === GP2: Lesson Planning & Critical Thinking ===
+  {
+    id: 4,
+    category: 'GP2',
+    sub: 'Lesson Plans', // 2.1
+    title: 'Lesson Plans and more',
+    blocks: [
       {
         type: 'image',
         src: '/assets/images/Teaching/2.jpeg',
@@ -46,69 +128,6 @@ const projects = [
         type: 'paragraph',
         content: 'Peer reading moment - One student is reading for her peers after reading was modelled by teacher',
       },
-      {
-        type: 'image',
-        src: '/assets/images/Teaching/5.jpeg',
-        alt: 'Class collaboration with creative expression',
-      },
-      {
-        type: 'paragraph',
-        content: 'Class collaboration with creative expression',
-      },
-      // {
-      //   type: 'slideshow',
-      //   images: [
-      //     '/images/activity1.jpg',
-      //     '/images/activity2.jpg',
-      //     '/images/activity3.jpg',
-      //   ],
-      // },
-    ],
-  },
-  {
-    id: 2,
-    category: 'GP1',
-    sub: 'Subject Connectivity and Relevant Checklist',
-    title: 'Curriculum Relevance Checklist',
-    blocks: [
-      {
-        type: 'paragraph',
-        content: 'Checklist showing how subject matter is aligned with real-world application and connects to cross-curricular goals.',
-      },
-      {
-        type: 'image',
-        src: '/images/checklist.jpg',
-        alt: 'Connectivity Checklist',
-      },
-    ],
-  },
-  {
-    id: 3,
-    category: 'GP1',
-    sub: 'Student paper /Essays/ Creative works',
-    title: 'Student Creative Work Showcase',
-    blocks: [
-      {
-        type: 'slideshow',
-        images: [
-          '/images/essay1.jpg',
-          '/images/essay2.jpg',
-        ],
-      },
-      {
-        type: 'paragraph',
-        content: 'These are samples of essays, poetry, and creative assignments submitted by students.',
-      },
-    ],
-  },
-
-  // === GP2 ===
-  {
-    id: 4,
-    category: 'GP2',
-    sub: 'Lesson Plans',
-    title: 'Lesson Plans and more',
-    blocks: [
       {
         type: 'pdf',
         src: '/assets/images/presentation/_Weeks 2-3 - ¿Quién eres tú_.pdf',
@@ -161,12 +180,190 @@ const projects = [
       },
     ],
   },
+  {
+    id: 10,
+    category: 'GP2',
+    sub: 'Ensures interactive, teaching and learning environment', // 2.2
+    title: 'Lesson Plans',
+    blocks: [
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/1.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/2.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/3.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/4.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/5.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/6.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      
+    ],
+  },
+  {
+    id: 25,
+    category: 'GP2',
+    sub: 'Engages in reflective thinking and action research', // 2.3
+    title: 'Class collaboration with creative expression',
+    blocks: [
+      {
+        type: 'image',
+        src: '/assets/images/Taching/4.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/4.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/2.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'paragraph',
+        content: 'Class collaboration with creative expression',
+      },
+    ]
+  },
+  {
+    id: 26,
+    category: 'GP2',
+    sub: 'Uses language appropriately and effectively in classroom communication', // 2.4
+    title: 'Unscrambling the months of the year on the smartboard',
+    blocks: [
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/5.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/teaching/6.jpeg',
+        alt: 'Rules Poster',
+        description: 'Tracking student progress through emotional, social, and academic indicators.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/3.jpeg',
+        alt: 'Unscrambling the months of the year on the smartboard',
+      },
+      {
+        type: 'paragraph',
+        content: 'Unscrambling the months of the year on the smartboard',
+      },
+    ]
+  },
+  {
+    id: 27,
+    category: 'GP2',
+    sub: 'Relates subject to national development', // 2.5
+    title: 'Peer reading moment',
+    blocks: [
+      {
+        type: 'image',
+        src: '/assets/images/Teaching/4.jpeg',
+        alt: 'Peer reading moment - One student is reading for her peers after reading was modelled by teacher',
+      },
+      {
+        type: 'paragraph',
+        content: 'Peer reading moment - One student is reading for her peers after reading was modelled by teacher',
+      },
+    ]
+  },
+  {
+    id: 30,
+    category: 'GP2',
+    sub: `Develops in learners' critical thinking and creative ways to solve their problem`, // 2.1
+    title: `Develops in learners' critical thinking and creative ways to solve their problem`,
+    blocks: [
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/_Weeks 2-3 - ¿Quién eres tú_.pdf',
+        title: 'Lesson Plan: ¿Quién eres tú?'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/_Weeks -9-10- ¿Cómo es tu casa_.pdf',
+        title: 'Lesson Plan: ¿Cómo es tu casa?'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/_week 6-7 ¿Dónde vives tú_.pdf',
+        title: 'Lesson Plan: ¿Dónde vives tú?'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/week 8-9 ¿Cuántos años tienes_ .pdf',
+        title: 'Lesson Plan: ¿Cuántos años tienes?'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/Week 8 - Week 9 - Comparativos- Los deportes.pdf',
+        title: 'Lesson Plan: Comparativos- Los deportes'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/Week 2- Grade 10 Ppt- New Year Week - Review of future tense (1).pdf',
+        title: 'Lesson Plan: Review of future tense (1)'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/Week 2  COUNTRIES AND NATIONALITIES GR7 .pdf',
+        title: 'Lesson Plan: Countries and Nationalities (GR7)'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/La Buena Salud - Weeks 3 - 5.pdf',
+        title: 'Lesson Plan: La Buena Salud - Weeks 3 - 5'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/Grade 9 - Lávate las manos antes de cocinar - El imperativo.pdf',
+        title: 'Lesson Plan: Lávate las manos antes de cocinar - El imperativo'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/presentation/Grade 7 Week 7-9 - ¿Cómo eres tú_.pdf',
+        title: 'Lesson Plan: ¿Cómo eres tú? (Grade 7 Week 7-9)'
+      }
+    ]
+  },
 
   // === GP3 ===
   {
     id: 5,
     category: 'GP3',
-    sub: 'Teachers Incentive to Students',
+    sub: 'Teachers Incentive to Students', // 3.1
     title: 'Motivational Tools and Student Rewards',
     blocks: [
       {
@@ -183,7 +380,7 @@ const projects = [
   {
     id: 6,
     category: 'GP3',
-    sub: 'Strategies to Develop Critical Thinking in Students',
+    sub: 'Strategies to Develop Critical Thinking in Students', // 3.2
     title: 'Building Critical Thinking Skills',
     blocks: [
       {
@@ -202,7 +399,7 @@ const projects = [
   {
     id: 7,
     category: 'GP3',
-    sub: 'Assessment Instruments /Records',
+    sub: 'Assessment Instruments /Records', // 3.3
     title: 'Assessment Records Overview',
     blocks: [
       {
@@ -219,7 +416,7 @@ const projects = [
   {
     id: 8,
     category: 'GP3',
-    sub: 'Students overall development',
+    sub: 'Students overall development', // 3.4
     title: 'Student Development Reports',
     blocks: [
       {
@@ -249,7 +446,7 @@ const projects = [
   {
     id: 9,
     category: 'GP3',
-    sub: 'Classroom Rules and Procedures',
+    sub: 'Classroom Rules and Procedures', // 3.5
     title: 'Standard Classroom Rules',
     blocks: [
       {
@@ -268,30 +465,70 @@ const projects = [
   {
     id: 14,
     category: 'GP4',
-    sub: 'Certificates',
+    sub: 'Performance in teaching and learning process', // 4.1
     title: 'Certification & Licensing',
     blocks: [
       {
         type: 'image',
-        src: '/assets/images/certificate.jpeg',
-        alt: 'Certificate',
+        src: '/assets/images/Development/uwi1.jpeg',
+        alt: 'Visiting UWI 1',
       },
-      // {
-      //   type: 'image',
-      //   src: '/images/cert1.jpg',
-      //   alt: 'Certificate 1',
-      // },
-      // {
-      //   type: 'image',
-      //   src: '/images/cert2.jpg',
-      //   alt: 'Certificate ',
-      // },
+      {
+        type: 'paragraph',
+        content: 'Image of visiting UWI .',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/uwi2.jpeg',
+        alt: 'Visiting UWI 2',
+      },
+      {
+        type: 'paragraph',
+        content: 'Image of visiting UWI .',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/5.jpeg',
+        alt: 'Conference 5',
+        description: 'Presenting at an educational conference.'
+      },
+      
+      {
+        type: 'image',
+        src: '/assets/images/Development/7.jpeg',
+        alt: 'Professional Development Event',
+        description: 'Participating in a professional development event with colleagues.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/8.jpeg',
+        alt: 'Professional Development Group',
+        description: 'Group photo from a professional development workshop.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/9.jpeg',
+        alt: 'Professional Development Team',
+        description: 'Team collaboration during a professional development event.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/10.jpeg',
+        alt: 'Professional Development Gathering',
+        description: 'Gathering of educators at a professional development session.'
+      },
+       {
+        type: 'image',
+        src: '/assets/images/Development/11.jpeg',
+        alt: 'Professional Development Gathering',
+        description: 'Gathering of educators at a professional development session.'
+      },
     ],
   },
   {
     id: 19,
     category: 'GP4',
-    sub: 'Professional Development',
+    sub: 'Professional Development', // 4.2
     title: 'Professional Development Activities',
     blocks: [
       {
@@ -354,6 +591,12 @@ const projects = [
         alt: 'Professional Development Gathering',
         description: 'Gathering of educators at a professional development session.'
       },
+      {
+        type: 'image',
+        src: '/assets/images/Development/11.jpeg',
+        alt: 'Professional Development Gathering',
+        description: 'Gathering of educators at a professional development session.'
+      },
     ],
   },
 
@@ -361,7 +604,7 @@ const projects = [
   {
     id: 17,
     category: 'GP5',
-    sub: 'Interaction with parents',
+    sub: 'Interaction with parents', // 5.1
     title: 'Parent Engagement Activities',
     blocks: [
       {
@@ -373,24 +616,34 @@ const projects = [
   {
     id: 18,
     category: 'GP5',
-    sub: 'Community Involvement',
+    sub: 'Community Involvement', // 5.2
     title: 'Community Service Project',
     blocks: [
+      
       {
         type: 'image',
-        src: '/images/community.jpg',
-        alt: 'Community Event',
+        src: '/assets/images/Development/uwi1.jpeg',
+        alt: 'Visiting UWI 1',
       },
       {
         type: 'paragraph',
-        content: 'Images and descriptions from cleanup drives and volunteer activities.',
+        content: 'Image of visiting UWI .',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/Development/uwi2.jpeg',
+        alt: 'Visiting UWI 2',
+      },
+      {
+        type: 'paragraph',
+        content: 'Image of visiting UWI .',
       },
     ],
   },
   // {
   //   id: 19,
   //   category: 'GP6',
-  //   sub: '',
+  //   sub: '', // 6.1
   //   title: 'GP6',
   //   blocks: [
   //     {

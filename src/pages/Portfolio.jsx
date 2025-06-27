@@ -3,33 +3,87 @@
 // import projects from '../data/projects'
 
 // const categoryBanners = {
-//   GP1: { img: '/images/gp1-banner.jpg', text: 'Welcome to GP1 - General content for GP1. You can add images, text, etc. here.' },
-//   GP2: { img: '/images/gp2-banner.jpg', text: 'Welcome to GP2 - General content for GP2.' },
-//   GP3: { img: '/images/gp3-banner.jpg', text: 'Welcome to GP3 - General content for GP3.' },
-//   GP4: { img: '/images/gp4-banner.jpg', text: 'Welcome to GP4 - General content for GP4.' },
-//   GP5: { img: '/images/gp5-banner.jpg', text: 'Welcome to GP5 - General content for GP5.' },
-//   GP6: { img: '/images/gp6-banner.jpg', text: 'Welcome to GP6 - General content for GP6.' },
+//   GP1: { img: '/assets/images/teach.jpg', text: <>GP#1 Teacher knows the subject she teaches</> },
+//   GP2: { img: '/assets/images/teach2.jpg', text: <>GP#2 Teacher knows how to teach the subject(s) for which she is responsible</> },
+//   GP3: { img: '/assets/images/teach3.png', text: <>GP#3 Teacher knows her students - effectively managing diversity to promote inclusive classes</> },
+//   GP4: { img: '/assets/images/teach4.jpg', text: <>GP#4 Teacher sharpens her professional skill</> },
+//   GP5: { img: '/assets/images/teach5.jpg', text: <>GP#5 Teacher interacts with parents and community</> },
+//   GP6: { img: '/assets/images/teach6.png', text: <>GP#6 Teacher conducts herself in a manner that uplifts the profession</> },
 // }
 
 // const categories = [
-//   { name: 'GP1', content: 'General content for GP1. You can add images, text, etc. here.', sub: ['Teaching Activities and Subject Goals', 'Subject Connectivity and Relevant Checklist', 'Student paper /Essays/ Creative works'] },
-//   { name: 'GP2', content: 'General content for GP2.', sub: ['Action research/Case study'] },
-//   { name: 'GP3', content: 'General content for GP3.', sub: ['Teachers Incentive to Students', 'Strategies to Develop Critical Thinking in Students', 'Assessment Instruments /Records', 'Students overall development', 'Classroom Rules and Procedures'] },
-//   { name: 'GP4', content: 'General content for GP4.', sub: ['Professional Development', 'Assessment Records', 'Action Research', 'Professional Membership', 'Certificates', 'Presentations', 'Observations'] },
-//   { name: 'GP5', content: 'General content for GP5.', sub: ['Interaction with parents', 'Community Involvement'] },
-//   { name: 'GP6', content: 'General content for GP6.', sub: [''] },
-// }
+//   {
+//     name: 'GP1',
+//     content: '',
+//     sub: [
+//       { num: '1.1', heading: 'Knows the subject content' },
+//       { num: '1.2', heading: 'Is able to relate concepts to other subjects' },
+//       { num: '1.3', heading: 'Knows and understands how the subject is structured in the curriculum' },
+//       { num: '1.4', heading: 'Is able to relate subject to national development' },
+//     ],
+//   },
+//   {
+//     name: 'GP2',
+//     content: '',
+//     sub: [
+//       { num: '2.1', heading: `Develops in learners' critical thinking and creative ways to solve their problem` },
+//       { num: '2.2', heading: 'Ensures interactive, teaching and learning environment' },
+//       { num: '2.3', heading: 'Engages in reflective thinking and action research' },
+//       { num: '2.4', heading: 'Uses language appropriately and effectively in classroom communication' },
+//     ],
+//   },
+//   {
+//     name: 'GP3',
+//     content: '',
+//     sub: [
+//       { num: '3.1', heading: `Knows age and developmental (intellectual, physical, social) characteristics of students` },
+//       { num: '3.2', heading: 'Knows diverse factors' },
+//       { num: '3.3', heading: 'Knows the principles of inclusive education and their applications' },
+//       { num: '3.4', heading: 'Knows the different learning styles and approaches of students' },
+//       { num: '3.5', heading: 'Knows and understands student skills, interests and previous learning and the effect of these on learning' },
+//       { num: '3.6', heading: 'Knows of gender differences and how these affect learning' },
+//       { num: '3.7', heading: 'Manages classroom behaviour to enable learning' },
+//       { num: '3.8', heading: 'Assures and maintains a safe physical and psychological environment' },
+//     ],
+//   },
+//   {
+//     name: 'GP4',
+//     content: '',
+//     sub: [
+//       { num: '4.1', heading: '' },
+//       { num: '4.2', heading: '' },
+//       { num: '4.3', heading: '' },
+//     ],
+//   },
+//   {
+//     name: 'GP5',
+//     content: '',
+//     sub: [
+//       { num: '5.1', heading: '' },
+//       { num: '5.2', heading: '' },
+//       { num: '5.3', heading: '' },
+//       { num: '5.4', heading: '' },
+//     ],
+//   },
+//   {
+//     name: 'GP6',
+//     content: '',
+//     sub: [
+//       { num: '6.1', heading: '' },
+//       { num: '6.2', heading: '' },
+//       { num: '6.3', heading: '' },
+//     ],
+//   },
+// ]
 
 // export default function Portfolio() {
 //   const { category, sub } = useParams()
 //   const navigate = useNavigate()
 
-//   // Default to GP1 if no category in URL
 //   const selectedCategory = category || categories[0].name
 //   const selectedSub = sub || null
 
 //   useEffect(() => {
-//     // If no category in URL, redirect to /portfolio/GP1
 //     if (!category) {
 //       navigate(`/portfolio/${categories[0].name}`, { replace: true })
 //     }
@@ -41,28 +95,31 @@
 //     text: 'Welcome to the Portfolio Section',
 //   }
 
-//   const selectedProject =
-//     selectedSub
-//       ? projects.find(p => p.category === selectedCategory && p.sub === selectedSub)
-//       : null
+//   // Find the sub object for heading
+//   const selectedSubObj = selectedSub && currentCategory?.sub.find(s => s.num === selectedSub)
 
-//   // Navigation handlers
+//   // Find the project for content
+//   const selectedProject = selectedSubObj
+//     ? projects.find(p => p.category === selectedCategory && p.sub === selectedSubObj.heading)
+//     : null
+
 //   const handleCategoryClick = catName => {
 //     navigate(`/portfolio/${catName}`)
 //   }
-//   const handleSubClick = (catName, subName) => {
-//     navigate(`/portfolio/${catName}/${encodeURIComponent(subName)}`)
+
+//   const handleSubClick = (catName, subNum) => {
+//     navigate(`/portfolio/${catName}/${subNum}`)
 //   }
 
 //   return (
 //     <>
-//       {/* Category Buttons */}
-//       <div className="mb-6 flex flex-nowrap gap-4">
+//       {/* Category Menu */}
+//       <div className="mb-6 flex flex-wrap justify-center gap-3">
 //         {categories.map(cat => (
 //           <div key={cat.name} className="relative group">
 //             <button
 //               onClick={() => handleCategoryClick(cat.name)}
-//               className={`flex items-center gap-2 px-6 py-2 rounded-full font-medium transition duration-200 shadow-sm border
+//               className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-2 rounded-full font-medium transition duration-200 shadow-sm border text-sm sm:text-base whitespace-nowrap
 //                 ${
 //                   selectedCategory === cat.name && !selectedSub
 //                     ? 'bg-primary text-white border-primary'
@@ -71,97 +128,116 @@
 //             >
 //               {cat.name}
 //             </button>
-//             {/* Dropdown on hover */}
-//             <div className="absolute left-0 mt-0 hidden group-hover:block z-50 w-max min-w-[220px]">
-//               <div className="bg-white border rounded shadow">
-//                 {cat.sub.map(subItem => (
-//                   <button
-//                     key={subItem}
-//                     onClick={() => handleSubClick(cat.name, subItem)}
-//                     className={`block w-full text-left px-4 py-2 hover:bg-primary hover:text-white whitespace-nowrap ${
-//                       selectedCategory === cat.name && selectedSub === subItem
-//                         ? 'bg-primary text-white'
-//                         : ''
-//                     }`}
-//                   >
-//                     {subItem}
-//                   </button>
-//                 ))}
-//               </div>
+
+//             {/* Dropdown Submenu */}
+//             <div className="absolute left-0 mt-0 hidden group-hover:block z-50 min-w-[220px] bg-white border rounded shadow">
+//               {cat.sub.map(subItem => (
+//                 <button
+//                   key={subItem.num}
+//                   onClick={() => handleSubClick(cat.name, subItem.num)}
+//                   className={`block w-full text-left px-4 py-2 hover:bg-primary hover:text-white whitespace-nowrap text-sm sm:text-base ${
+//                     selectedCategory === cat.name && selectedSub === subItem.num
+//                       ? 'bg-primary text-white'
+//                       : ''
+//                   }`}
+//                 >
+//                   {subItem.num}
+//                 </button>
+//               ))}
 //             </div>
 //           </div>
 //         ))}
 //       </div>
 
-//       {/* Show banner and category content only if NOT viewing a subcategory */}
+//       {/* Banner and Intro Text */}
 //       {!selectedSub && (
 //         <>
-//           {/* Banner with image and text */}
 //           <div className="relative w-full mb-8 rounded-2xl overflow-hidden shadow-lg">
 //             <img
 //               src={banner.img}
 //               alt={selectedCategory + ' banner'}
-//               className="w-full h-48 object-cover"
+//               className="w-full h-40 sm:h-48 md:h-56 object-cover"
 //             />
 //             <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-//               <h1 className="text-3xl md:text-4xl font-bold text-white text-center drop-shadow-lg px-4">
+//               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center drop-shadow-lg px-4">
 //                 {banner.text}
 //               </h1>
 //             </div>
 //           </div>
-//           {/* Category Content */}
-//           <div className="bg-white p-6 rounded-xl shadow mb-6">
-//             <h2 className="text-2xl font-bold mb-2 text-primary">{selectedCategory}</h2>
+
+//           <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-6">
+//             <h2 className="text-xl sm:text-2xl font-bold mb-2 text-primary">{selectedCategory}</h2>
 //             <p className="mb-2">{currentCategory?.content}</p>
 //           </div>
 //         </>
 //       )}
 
-//       {/* Subcategory/Project Content */}
-//       {selectedSub && selectedProject ? (
-//         <div className="bg-white p-6 rounded-xl shadow">
-//           <h3 className="text-xl font-bold mb-4 text-primary">{selectedProject.title}</h3>
-//           {selectedProject.blocks.map((block, index) => {
-//             if (block.type === 'paragraph') {
-//               return <p key={index} className="mb-4 text-gray-800">{block.content}</p>
-//             }
-//             if (block.type === 'image') {
-//               return (
-//                 <img
-//                   key={index}
-//                   src={block.src}
-//                   alt={block.alt}
-//                   className="mb-4 w-full rounded shadow"
-//                 />
-//               )
-//             }
-//             if (block.type === 'video') {
-//               return (
-//                 <div key={index} className="mb-6 aspect-video">
-//                   <iframe
+//       {/* Subcategory Content */}
+//       {selectedSub && (
+//         <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
+//           <h3 className="text-xl font-bold mb-4 text-primary">
+//             {selectedSubObj?.heading || selectedSub}
+//           </h3>
+//           {selectedProject ? (
+//             selectedProject.blocks.map((block, index) => {
+//               if (block.type === 'paragraph') {
+//                 return <p key={index} className="mb-4 text-gray-800">{block.content}</p>
+//               }
+//               if (block.type === 'image') {
+//                 return (
+//                   <img
+//                     key={index}
 //                     src={block.src}
-//                     className="w-full h-full rounded shadow"
-//                     allowFullScreen
-//                   ></iframe>
-//                 </div>
-//               )
-//             }
-//             if (block.type === 'slideshow') {
-//               return (
-//                 <div key={index} className="flex gap-4 overflow-x-auto mb-6 py-2">
-//                   {block.images.map((img, i) => (
-//                     <img key={i} src={img} className="h-40 rounded shadow" alt={`Slide ${i}`} />
-//                   ))}
-//                 </div>
-//               )
-//             }
-//             return null
-//           })}
+//                     alt={block.alt}
+//                     className="mb-4 w-full rounded shadow"
+//                   />
+//                 )
+//               }
+//               if (block.type === 'video') {
+//                 return (
+//                   <div key={index} className="mb-6 aspect-video">
+//                     <iframe
+//                       src={block.src}
+//                       className="w-full h-full rounded shadow"
+//                       allowFullScreen
+//                     ></iframe>
+//                   </div>
+//                 )
+//               }
+//               if (block.type === 'slideshow') {
+//                 return (
+//                   <div key={index} className="flex gap-4 overflow-x-auto mb-6 py-2">
+//                     {block.images.map((img, i) => (
+//                       <img
+//                         key={i}
+//                         src={img}
+//                         className="h-32 sm:h-40 rounded shadow flex-shrink-0"
+//                         alt={`Slide ${i}`}
+//                       />
+//                     ))}
+//                   </div>
+//                 )
+//               }
+//               if (block.type === 'pdf') {
+//                 return (
+//                   <div key={index} className="mb-8">
+//                     <div className="font-semibold text-primary mb-2">{block.title}</div>
+//                     <iframe
+//                       src={block.src}
+//                       title={block.title}
+//                       width="100%"
+//                       height="600px"
+//                       className="w-full border rounded shadow"
+//                     ></iframe>
+//                   </div>
+//                 )
+//               }
+//               return null
+//             })
+//           ) : (
+//             <div className="text-gray-500 text-center">No content found for this subcategory.</div>
+//           )}
 //         </div>
-//       ) : (
-//         selectedSub && (
-//           <div className="text-gray-500 text-center">No content found for this subcategory.</div>
-//         )
 //       )}
 //     </>
 //   )
@@ -171,21 +247,77 @@ import { useParams, useNavigate } from 'react-router-dom'
 import projects from '../data/projects'
 
 const categoryBanners = {
-  GP1: { img: '/assets/images/teach.jpg', text: <>Guiding Principle 1 -<br />Teacher knows the subject that she teaches</> },
-  GP2: { img: '/assets/images/teach2.jpg', text: <>Guiding Principle 2 -<br />The teacher knows how to teach the subject for which she is responsible</> },
-  GP3: { img: '/assets/images/teach3.png', text: <>Guiding Principle 3 -<br />Teacher is committed to the children in her care- managing the learning process through addressing diversity and promoting character development. </>},
-  GP4: { img: '/assets/images/teach4.jpg', text: <>Guiding Principle 4 -<br />Professional Development</> },
-  GP5: { img: '/assets/images/teach5.jpg', text: <>Guiding Principle 5 -<br />Teacher Interactions</> },
-  // GP6: { img: '/assets/images/teach6.png', text: <>Guiding Principle 6 -<br /></> },
+  GP1: { img: '/assets/images/teach.jpg', text: <>GP#1 Teacher knows the subject she teaches</> },
+  GP2: { img: '/assets/images/teach2.jpg', text: <>GP#2 Teacher knows how to teach the subject(s) for which she is responsible</> },
+  GP3: { img: '/assets/images/teach3.png', text: <>GP#3 Teacher knows her students - effectively managing diversity to promote inclusive classes</> },
+  GP4: { img: '/assets/images/teach4.jpg', text: <>GP#4 Teacher sharpens her professional skill</> },
+  GP5: { img: '/assets/images/teach5.jpg', text: <>GP#5 Teacher interacts with parents and community</> },
+  GP6: { img: '/assets/images/teach6.png', text: <>GP#6 Teacher conducts herself in a manner that uplifts the profession</> },
 }
 
 const categories = [
-  { name: 'GP1', content: '', sub: ['Teaching Activities and Subject Goals'] },
-  { name: 'GP2', content: '', sub: ['Lesson Plans'] },
-  { name: 'GP3', content: '', sub: ['Teachers Incentive to Students', 'Strategies to Develop Critical Thinking in Students'] },
-  { name: 'GP4', content: '', sub: ['Professional Development', 'Certificates'] },
-  { name: 'GP5', content: '', sub: ['Interaction with parents'] },
-  // { name: 'GP6', content: 'General content for GP6.', sub: [''] },
+  {
+    name: 'GP1',
+    content: '',
+    sub: [
+      { num: '1.1', heading: 'Knows the subject content' },
+      { num: '1.2', heading: 'Is able to relate concepts to other subjects' },
+      { num: '1.3', heading: 'Knows and understands how the subject is structured in the curriculum' },
+      { num: '1.4', heading: 'Is able to relate subject to national development' },
+    ],
+  },
+  {
+    name: 'GP2',
+    content: '',
+    sub: [
+      { num: '2.1', heading: `Develops in learners' critical thinking and creative ways to solve their problem` },
+      { num: '2.2', heading: 'Ensures interactive, teaching and learning environment' },
+      { num: '2.3', heading: 'Engages in reflective thinking and action research' },
+      { num: '2.4', heading: 'Uses language appropriately and effectively in classroom communication' },
+    ],
+  },
+  {
+    name: 'GP3',
+    content: '',
+    sub: [
+      { num: '3.1', heading: `Knows age and developmental (intellectual, physical, social) characteristics of students` },
+      { num: '3.2', heading: 'Knows diverse factors' },
+      { num: '3.3', heading: 'Knows the principles of inclusive education and their applications' },
+      { num: '3.4', heading: 'Knows the different learning styles and approaches of students' },
+      { num: '3.5', heading: 'Knows and understands student skills, interests and previous learning and the effect of these on learning' },
+      { num: '3.6', heading: 'Knows of gender differences and how these affect learning' },
+      { num: '3.7', heading: 'Manages classroom behaviour to enable learning' },
+      { num: '3.8', heading: 'Assures and maintains a safe physical and psychological environment' },
+    ],
+  },
+  {
+    name: 'GP4',
+    content: '',
+    sub: [
+      { num: '4.1', heading: 'Performance in teaching and learning process' },
+      { num: '4.2', heading: 'Seeks out and pursues opportunities' },
+      { num: '4.3', heading: 'Maintains higher order functioning' },
+    ],
+  },
+  {
+    name: 'GP5',
+    content: '',
+    sub: [
+      { num: '5.1', heading: 'Communicate with parents' },
+      { num: '5.2', heading: 'Community Involvement' },
+      { num: '5.3', heading: 'Engages parents and community' },
+      { num: '5.4', heading: 'Professional responsibility ' },
+    ],
+  },
+  {
+    name: 'GP6',
+    content: '',
+    sub: [
+      { num: '6.1', heading: 'Acts with the knowledge' },
+      { num: '6.2', heading: 'Teacher has a moral responsibility' },
+      { num: '6.3', heading: 'Commit to the success of learners' },
+    ],
+  },
 ]
 
 export default function Portfolio() {
@@ -207,16 +339,20 @@ export default function Portfolio() {
     text: 'Welcome to the Portfolio Section',
   }
 
-  const selectedProject = selectedSub
-    ? projects.find(p => p.category === selectedCategory && p.sub === selectedSub)
+  // Find the sub object for heading
+  const selectedSubObj = selectedSub && currentCategory?.sub.find(s => s.num === selectedSub)
+
+  // Find the project for content
+  const selectedProject = selectedSubObj
+    ? projects.find(p => p.category === selectedCategory && p.sub === selectedSubObj.heading)
     : null
 
   const handleCategoryClick = catName => {
     navigate(`/portfolio/${catName}`)
   }
 
-  const handleSubClick = (catName, subName) => {
-    navigate(`/portfolio/${catName}/${encodeURIComponent(subName)}`)
+  const handleSubClick = (catName, subNum) => {
+    navigate(`/portfolio/${catName}/${subNum}`)
   }
 
   return (
@@ -241,15 +377,15 @@ export default function Portfolio() {
             <div className="absolute left-0 mt-0 hidden group-hover:block z-50 min-w-[220px] bg-white border rounded shadow">
               {cat.sub.map(subItem => (
                 <button
-                  key={subItem}
-                  onClick={() => handleSubClick(cat.name, subItem)}
+                  key={subItem.num}
+                  onClick={() => handleSubClick(cat.name, subItem.num)}
                   className={`block w-full text-left px-4 py-2 hover:bg-primary hover:text-white whitespace-nowrap text-sm sm:text-base ${
-                    selectedCategory === cat.name && selectedSub === subItem
+                    selectedCategory === cat.name && selectedSub === subItem.num
                       ? 'bg-primary text-white'
                       : ''
                   }`}
                 >
-                  {subItem}
+                  {subItem.num}
                 </button>
               ))}
             </div>
@@ -281,75 +417,71 @@ export default function Portfolio() {
       )}
 
       {/* Subcategory Content */}
-      {selectedSub && selectedProject ? (
+      {selectedSub && (
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold mb-4 text-primary">{selectedProject.title}</h3>
-
-          {selectedProject.blocks.map((block, index) => {
-            if (block.type === 'paragraph') {
-              return <p key={index} className="mb-4 text-gray-800">{block.content}</p>
-            }
-
-            if (block.type === 'image') {
-              return (
-                <img
-                  key={index}
-                  src={block.src}
-                  alt={block.alt}
-                  className="mb-4 w-full rounded shadow"
-                />
-              )
-            }
-
-            if (block.type === 'video') {
-              return (
-                <div key={index} className="mb-6 aspect-video">
-                  <iframe
+          <h3 className="text-xl font-bold mb-4 text-primary">
+            {selectedSubObj?.heading || selectedSub}
+          </h3>
+          {selectedProject ? (
+            selectedProject.blocks.map((block, index) => {
+              if (block.type === 'paragraph') {
+                return <p key={index} className="mb-4 text-gray-800">{block.content}</p>
+              }
+              if (block.type === 'image') {
+                return (
+                  <img
+                    key={index}
                     src={block.src}
-                    className="w-full h-full rounded shadow"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              )
-            }
-
-            if (block.type === 'slideshow') {
-              return (
-                <div key={index} className="flex gap-4 overflow-x-auto mb-6 py-2">
-                  {block.images.map((img, i) => (
-                    <img
-                      key={i}
-                      src={img}
-                      className="h-32 sm:h-40 rounded shadow flex-shrink-0"
-                      alt={`Slide ${i}`}
-                    />
-                  ))}
-                </div>
-              )
-            }
-
-            if (block.type === 'pdf') {
-              return (
-                <div key={index} className="mb-8">
-                  <div className="font-semibold text-primary mb-2">{block.title}</div>
-                  <iframe
-                    src={block.src}
-                    title={block.title}
-                    width="100%"
-                    height="600px"
-                    className="w-full border rounded shadow"
-                  ></iframe>
-                </div>
-              );
-            }
-
-            return null
-          })}
+                    alt={block.alt}
+                    className="mb-4 w-full rounded shadow"
+                  />
+                )
+              }
+              if (block.type === 'video') {
+                return (
+                  <div key={index} className="mb-6 aspect-video">
+                    <iframe
+                      src={block.src}
+                      className="w-full h-full rounded shadow"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                )
+              }
+              if (block.type === 'slideshow') {
+                return (
+                  <div key={index} className="flex gap-4 overflow-x-auto mb-6 py-2">
+                    {block.images.map((img, i) => (
+                      <img
+                        key={i}
+                        src={img}
+                        className="h-32 sm:h-40 rounded shadow flex-shrink-0"
+                        alt={`Slide ${i}`}
+                      />
+                    ))}
+                  </div>
+                )
+              }
+              if (block.type === 'pdf') {
+                return (
+                  <div key={index} className="mb-8">
+                    <div className="font-semibold text-primary mb-2">{block.title}</div>
+                    <iframe
+                      src={block.src}
+                      title={block.title}
+                      width="100%"
+                      height="600px"
+                      className="w-full border rounded shadow"
+                    ></iframe>
+                  </div>
+                )
+              }
+              return null
+            })
+          ) : (
+            <div className="text-gray-500 text-center">No content found for this subcategory.</div>
+          )}
         </div>
-      ) : (
-        selectedSub && (
-          <div className="text-gray-500 text-center">No content found for this subcategory.</div>
-        )
       )}
     </>
   )
