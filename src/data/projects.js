@@ -87,12 +87,12 @@ const projects = [
   {
     id: 22,
     category: 'GP1',
-    sub: 'Knows and understands how the subject is structured in the curriculum', // 1.3
+    // 1.3
     title: 'curriculum structure',
     blocks: [
       {
         type: 'pdf',
-        src: 'https://pep.moey.gov.jm/wp-content/uploads/2020/09/NSC_Spanish-Grade-7-9-Jan2020.pdf',
+        src: '/assets/images/GP1/NSC_Spanish-Grade-7-9-Jan2020.pdf',
         title: 'NSC Spanish Grade 7-9 Curriculum (Jan 2020)'
       },
       // No blocks, consider adding relevant content or comment out if not used
