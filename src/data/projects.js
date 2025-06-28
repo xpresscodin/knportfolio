@@ -25,6 +25,11 @@ const projects = [
         alt: '',
       },
       {
+        type: 'image',
+        src: '/assets/images/GP1/cert.jpeg',
+        alt: '',
+      },
+      {
         type: 'paragraph',
         content: '.'
       }
@@ -33,18 +38,63 @@ const projects = [
   {
     id: 21,
     category: 'GP1',
-    sub: 'Relates concepts to other subjects', // 1.2
+    sub: 'Is able to relate concepts to other subjects', // 1.2
     title: 'Class collaboration with creative expression',
     blocks: [
+      { 
+        type: 'paragraph',
+        content: 'Performance Statement: I integrate Spanish language learning with other key learning areas to create meaningful, cross-disciplinary connections for students.'
+      },
+      {
+        type: 'paragraph',
+        content: `Evidence:
+
+      Designed Spanish lessons that link to Geography and History by exploring Spanish-speaking countries, their traditions, and historical ties to global events.
+
+      Integrated Art and Music by introducing students to Hispanic cultural expressions, such as traditional songs, dances, and visual arts, deepening their cultural and linguistic understanding.`
+      },
+      {
+        type: 'image',
+        src: '/assets/images/map.jpeg',
+        alt: 'Map showing Spanish-speaking countries',
+      },
+      {
+        type: 'paragraph',
+        content: 'Students also got the opportunity to identify/locate Spanish-Speaking countries on a map.'
+      },
+      {
+        type: 'video',
+        src: '/assets/images/GP1/dancing.mp4',
+        alt: 'Students dancing to Hispanic music'
+      },
+      {
+        type: 'paragraph',
+        content: 'Students were imitating cultural expression and dancing to Spanish music.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP1/clothes.jpeg',
+        alt: 'Clothes from Spanish-speaking countries',
+      },
+      {
+        type: 'paragraph',
+        content: 'Students explored cultural clothes worn in Spanish speaking countries and compared them to our own'
+      },
+
       // No blocks, consider adding relevant content or comment out if not used
     ]
   },
   {
     id: 22,
     category: 'GP1',
-    sub: 'Understands subject structure in curriculum', // 1.3
-    title: 'Unscrambling the months of the year on the smartboard',
+    sub: 'Knows and understands how the subject is structured in the curriculum', // 1.3
+    title: 'curriculum structure',
     blocks: [
+      {
+        type: 'pdf',
+        src: 'https://pep.moey.gov.jm/wp-content/uploads/2020/09/NSC_Spanish-Grade-7-9-Jan2020.pdf',
+        title: 'NSC Spanish Grade 7-9 Curriculum (Jan 2020)'
+      },
       // No blocks, consider adding relevant content or comment out if not used
     ]
   },
