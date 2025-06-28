@@ -8,7 +8,7 @@ const projects = [
     blocks: [
       {
         type: 'paragraph',
-        content: 'Performance Statement:'<br/> 'I possess a solid foundation in Spanish language instruction, underpinned by formal teacher education and continuous professional learning.'
+        content: 'Performance Statement: I possess a solid foundation in Spanish language instruction, underpinned by formal teacher education and continuous professional learning.'
       },
       {
         type: 'image',
