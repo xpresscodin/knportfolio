@@ -87,7 +87,7 @@ const projects = [
   {
     id: 22,
     category: 'GP1',
-    // 1.3
+    sub: 'Knows and understands how the subject is structured in the curriculum', // 1.3
     title: 'curriculum structure',
     blocks: [
       {
