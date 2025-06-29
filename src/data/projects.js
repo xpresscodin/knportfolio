@@ -553,6 +553,11 @@ const projects = [
     title: 'Motivational Tools and Student Rewards',
     blocks: [
       {
+        type: 'paragraph',
+        content: 'Performance Statement: I design lessons that are age-appropriate and aligned with the intellectual, physical, and social development of my students, ensuring tasks are accessible, engaging, and relevant to their stage of learning.'
+      },
+
+      {
         type: 'pdf',
         src: '/assets/images/GP3/Cómo eres tú - differentiated.pdf',
         title: 'Cómo eres tú - differentiated'
@@ -576,65 +581,231 @@ const projects = [
   {
     id: 7,
     category: 'GP3',
-    sub: 'Assessment Instruments /Records', // 3.3
+    sub: 'Knows the principles of inclusive education and their applications', // 3.3
     title: 'Assessment Records Overview',
     blocks: [
-      {
-        type: 'image',
-        src: '/images/assessment-chart.jpg',
-        alt: 'Assessment Chart',
-      },
+      
       {
         type: 'paragraph',
-        content: 'Overview of quizzes, rubrics, and record-keeping used in class assessments.',
+        content: 'Created opportunities for all students to progress academically and to experience quality instruction in a safe and supportive classroom.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/1.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/2.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/3.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/4.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/5.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/6.jpeg',
+        alt: 'Class collaboration with creative expression',
+      },
+
+      {
+        type: 'paragraph',
+        content: 'Here I created a seating plan for one of my classes. In this plan, the girls who are near sighted are placed at the front while the girls who are far sighted are seated at the back. Additionally, the girls who are always communicating with their peers during class are not seated beside each other.',
+      },
+      
+      {
+        type: 'image',
+        src: '/assets/images/GP3/7.jpeg',
+        alt: 'attendance record',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/8.jpeg',
+        alt: 'attendance record',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/9.jpeg',
+        alt: 'attendance record',
       },
     ],
   },
   {
     id: 8,
     category: 'GP3',
-    sub: 'Students overall development', // 3.4
+    sub: 'Knows the different learning styles and approaches of students', // 3.4
     title: 'Student Development Reports',
     blocks: [
       {
-        type: 'image',
-        src: '/src/assets/images/Development/1.jpeg',
-        alt: 'Rules Poster',
-      },
-      {
         type: 'paragraph',
-        content: 'Tracking student progress through emotional, social, and academic indicators.',
+        content: 'Developed and used diagnostic assessment approaches, kept student records and undertook comparative analyses showing growth and progress of individualstudents.',
       },
       {
         type: 'image',
-        src: '/src/assets/images/Development/2.jpeg',
-        alt: 'Rules Poster',
+        src: '/assets/images/GP3/10.jpeg',
+        alt: '',
       },
       {
-        type: 'paragraph',
-        content: 'Tracking student progress through emotional, social, and academic indicators.',
-      },
-      {
-        type: 'slideshow',
-        images: ['/src/assets/images/Development/3.jpeg', '/src/assets/images/Development/4.jpeg','/src/assets/images/Development/5.jpeg', '/src/assets/images/Development/6.jpeg'],
+        type: 'image',
+        src: '/assets/images/GP3/11.jpeg',
+        alt: '',
       },
     ],
   },
   {
     id: 9,
     category: 'GP3',
-    sub: 'Classroom Rules and Procedures', // 3.5
+    sub: 'Knows and understands student skills, interests and previous learning and the effect of these on learning', // 3.5
     title: 'Standard Classroom Rules',
     blocks: [
       {
+        type: 'paragraph',
+        content: 'Before: The student underperformed on her vocabulary test and the first sixth-week alternative assessment due to not submitting a key project. Her performance did not reflect her true potential.',
+      },
+      {
         type: 'image',
-        src: '/images/rules.jpg',
-        alt: 'Rules Poster',
+        src: '/assets/images/GP3/Before implementation.jpeg',
+        alt: 'Before implementation',
       },
       {
         type: 'paragraph',
-        content: 'Posted rules and behavior expectations help maintain classroom discipline.',
+        content: 'Intervention', 
       },
+      {
+        type: 'paragraph',
+        content: ' A one-on-one conversation was held to provide encouragement and practical tips for improvement. The student was reminded of her potential and guided on how to manage tasks more effectively. Strategies Implemented Goal Setting: Helped her break down assignments into manageable tasks with deadlines. Organizational Skills: Introduced planners or checklists to track homework and project submissions. Study Techniques: Recommended active vocabulary study methods (e.g., flashcards, quizzes, contextual usage). Regular Check-ins: Scheduled brief progress updates to keep her accountable and motivated. Positive Reinforcement: Acknowledged her efforts and improvements to boost confidence.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/After implementation, the results were better for the following term.jpeg',
+        alt: 'Classroom Rules Poster',
+      },
+      {
+        type: 'paragraph',
+        content: 'After', 
+      },
+      {
+        type: 'paragraph',
+        content: 'Following the support and implementation of suggested strategies, the student showed marked improvement in the next term’s assessments, reflecting better preparation and engagement.', 
+      },
+      
+    ],
+  },
+  // {
+  //   id: 40,
+  //   category: 'GP3',
+  //   sub: 'Knows and understands student skills, interests and previous learning and the effect of these on learning', // 3.6
+  //   title: 'Standard Classroom Rules',
+  //   blocks: [
+  //     {
+  //       type: 'paragraph',
+  //       content: 'Before: The student underperformed on her vocabulary test and the first sixth-week alternative assessment due to not submitting a key project. Her performance did not reflect her true potential.',
+  //     },
+  //     {
+  //       type: 'image',
+  //       src: '/assets/images/GP3/Before implementation.jpeg',
+  //       alt: 'Before implementation',
+  //     },
+  //     {
+  //       type: 'paragraph',
+  //       content: 'Intervention', 
+  //     },
+  //     {
+  //       type: 'paragraph',
+  //       content: ' A one-on-one conversation was held to provide encouragement and practical tips for improvement. The student was reminded of her potential and guided on how to manage tasks more effectively. Strategies Implemented Goal Setting: Helped her break down assignments into manageable tasks with deadlines. Organizational Skills: Introduced planners or checklists to track homework and project submissions. Study Techniques: Recommended active vocabulary study methods (e.g., flashcards, quizzes, contextual usage). Regular Check-ins: Scheduled brief progress updates to keep her accountable and motivated. Positive Reinforcement: Acknowledged her efforts and improvements to boost confidence.'
+  //     },
+  //     {
+  //       type: 'image',
+  //       src: '/assets/images/GP3/After implementation, the results were better for the following term.jpeg',
+  //       alt: 'Classroom Rules Poster',
+  //     },
+  //     {
+  //       type: 'paragraph',
+  //       content: 'After', 
+  //     },
+  //     {
+  //       type: 'paragraph',
+  //       content: 'Following the support and implementation of suggested strategies, the student showed marked improvement in the next term’s assessments, reflecting better preparation and engagement.', 
+  //     },
+      
+  //   ],
+  // },
+  {
+    id: 41,
+    category: 'GP3',
+    sub: 'Manages classroom behaviour to enable learning', // 3.7
+    title: 'Standard Classroom Rules',
+    blocks: [
+      {
+        type: 'paragraph',
+        content: 'Had classroom rules and procedures that were adhered to by students',
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP3/CLASS RULES.pdf',
+        alt: 'Classroom Rules',
+      },
+    ],
+  },
+  {
+    id: 42,
+    category: 'GP3',
+    sub: 'Assures and maintains a safe physical and psychological environment', // 3.8
+    title: '',
+    blocks: [
+      {
+        type: 'image',
+        src: '/assets/images/GP3/12.jpeg',
+        alt: 'Before implementation',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/13.jpeg',
+        alt: 'Before implementation',
+      },
+      {
+        type: 'paragraph',
+        content: 'Before: The student underperformed on her vocabulary test and the first sixth-week alternative assessment due to not submitting a key project. Her performance did not reflect her true potential.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/Before implementation.jpeg',
+        alt: 'Before implementation',
+      },
+      {
+        type: 'paragraph',
+        content: 'Intervention', 
+      },
+      {
+        type: 'paragraph',
+        content: ' A one-on-one conversation was held to provide encouragement and practical tips for improvement. The student was reminded of her potential and guided on how to manage tasks more effectively. Strategies Implemented Goal Setting: Helped her break down assignments into manageable tasks with deadlines. Organizational Skills: Introduced planners or checklists to track homework and project submissions. Study Techniques: Recommended active vocabulary study methods (e.g., flashcards, quizzes, contextual usage). Regular Check-ins: Scheduled brief progress updates to keep her accountable and motivated. Positive Reinforcement: Acknowledged her efforts and improvements to boost confidence.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/After implementation, the results were better for the following term.jpeg',
+        alt: 'Classroom Rules Poster',
+      },
+      {
+        type: 'paragraph',
+        content: 'After', 
+      },
+      {
+        type: 'paragraph',
+        content: 'Following the support and implementation of suggested strategies, the student showed marked improvement in the next term’s assessments, reflecting better preparation and engagement.', 
+      },
+      
     ],
   },
 
