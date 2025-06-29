@@ -720,34 +720,15 @@ const projects = [
   {
     id: 19,
     category: 'GP4',
-    sub: 'Professional Development', // 4.2
+    sub: 'Seeks out and pursues opportunities', // 4.2
     title: 'Professional Development Activities',
     blocks: [
       {
         type: 'image',
-        src: '/assets/images/Development/1.jpeg',
-        alt: 'Workshop 1',
-        description: 'Attending a professional development workshop focused on innovative teaching strategies.'
+        src: '/assets/images/GP4/1.jpeg',
+        description: 'Group presentation on Spanish culture.'
       },
-      {
-        type: 'image',
-        src: '/assets/images/Development/2.jpeg',
-        alt: 'Seminar 2',
-        description: 'Participating in a seminar about student engagement and classroom management.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/3.jpeg',
-        alt: 'Collaboration 3',
-        description: 'Collaborative session with colleagues to develop new curriculum materials.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/4.jpeg',
-        alt: 'Training 4',
-        description: 'Training on integrating technology into the classroom.'
-      },
-      {
+            {
         type: 'image',
         src: '/assets/images/Development/5.jpeg',
         alt: 'Conference 5',
@@ -788,6 +769,30 @@ const projects = [
         src: '/assets/images/Development/11.jpeg',
         alt: 'Professional Development Gathering',
         description: 'Gathering of educators at a professional development session.'
+      },
+      
+      {
+        type: 'image',
+        src: '/assets/images/GP4/3.jpeg',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/2.jpeg',
+        description: 'Group presentation on Spanish culture.'
+      },
+    ],
+  },
+{
+    id: 15,
+    category: 'GP4',
+    sub: 'Maintains higher order functioning', // 4.3
+    title: 'Professional Development Activities',
+    blocks: [
+     {
+        type: 'pdf',
+        src: '/assets/images/GP2/groupwork/Qué estás haciendo - Present Progressive follow up lesson.pdf',
+        description: 'Group presentation on Spanish culture.'
       },
     ],
   },
