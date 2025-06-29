@@ -297,12 +297,6 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/GP2/groupwork/3.jpeg',
-        alt: 'Rules Poster',
-        description: 'Group presentation on Spanish culture.'
-      },
-      {
-        type: 'image',
         src: '/assets/images/GP2/groupwork/1.jpeg',
         alt: 'Rules Poster',
         description: 'Group presentation on Spanish culture.'
