@@ -21,12 +21,17 @@ const projects = [
       },
       {
         type: 'image',
-        src: '/assets/images/degree.jpeg',
+        src: '/assets/images/GP1/certificate.jpg',
         alt: '',
       },
       {
         type: 'image',
         src: '/assets/images/GP1/cert.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP1/heart.jpg',
         alt: '',
       },
       {
