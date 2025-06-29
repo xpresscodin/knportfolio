@@ -131,7 +131,7 @@ const projects = [
   {
     id: 23,
     category: 'GP1',
-    sub: 'Is able to relate subject to national development', // 1.4
+    sub: 'Is able to relate subject to national development goals', // 1.4
     title: 'Peer reading moment',
     blocks: [
       {
@@ -592,7 +592,7 @@ const projects = [
   {
     id: 6,
     category: 'GP3',
-    sub: 'Knows diverse factors', // 3.2
+    sub: 'Knows the diverse factors (social, cultural, religious,gender, environmental, special educational needs) that impact students’ learning', // 3.2
     title: 'Building Critical Thinking Skills',
     blocks: [
       {
@@ -842,7 +842,7 @@ const projects = [
   {
     id: 14,
     category: 'GP4',
-    sub: 'Performance in teaching and learning process', // 4.1
+    sub: 'Rigorously assesses ones’ performance in the teaching and learning process, collaborates with peers to critically examine ones’ teaching and learning performance, creates a personal plan for improvement and shares successful practices', // 4.1
     title: 'Development Activities',
     description: 'Professional development activities that enhance teaching skills and knowledge.',
     blocks: [
@@ -916,7 +916,7 @@ const projects = [
   {
     id: 19,
     category: 'GP4',
-    sub: 'Seeks out and pursues opportunities', // 4.2
+    sub: 'Seeks out and pursues opportunities for improving mastery of content and methodology and builds competences in the use of technology in education.', // 4.2
     title: 'Professional Development Activities',
     blocks: [
       {
@@ -959,7 +959,7 @@ const projects = [
 {
     id: 15,
     category: 'GP4',
-    sub: 'Maintains higher order functioning', // 4.3
+    sub: 'Maintains higher order functioning through strengthening abilities to reason, reflect, make fair judgment, evaluate, analyze and interpret.', // 4.3
     title: 'Professional Development Activities',
     blocks: [
 
@@ -1024,7 +1024,7 @@ const projects = [
   {
     id: 17,
     category: 'GP5',
-    sub: 'Communicate with parents', // 5.1
+    sub: 'Communicates with parents/caregivers to stimulate their interest in their children’s progress and reinforce learning, always giving priority interest to the learner', // 5.1
     title: 'Parent Engagement Activities',
     blocks: [
 
@@ -1063,7 +1063,7 @@ const projects = [
   {
     id: 18,
     category: 'GP5',
-    sub: 'Community Involvement', // 5.2
+    sub: 'Engages community members to build trust, to foster open communication and to work collaboratively with parents to benefit students’ achievement levels', // 5.2
     title: 'Community Service Project',
     blocks: [
       {

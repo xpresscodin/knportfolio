@@ -263,7 +263,7 @@ const categories = [
       { num: '1.1', heading: 'Knows the subject content' },
       { num: '1.2', heading: 'Is able to relate concepts to other subjects' },
       { num: '1.3', heading: 'Knows and understands how the subject is structured in the curriculum' },
-      { num: '1.4', heading: 'Is able to relate subject to national development' },
+      { num: '1.4', heading: 'Is able to relate subject to national development goals' },
     ],
   },
   {
@@ -281,7 +281,7 @@ const categories = [
     content: '',
     sub: [
       { num: '3.1', heading: `Knows age and developmental (intellectual, physical, social) characteristics of students` },
-      { num: '3.2', heading: 'Knows diverse factors' },
+      { num: '3.2', heading: 'Knows the diverse factors (social, cultural, religious,gender, environmental, special educational needs) that impact students’ learning' },
       { num: '3.3', heading: 'Knows the principles of inclusive education and their applications' },
       { num: '3.4', heading: 'Knows the different learning styles and approaches of students' },
       { num: '3.5', heading: 'Knows and understands student skills, interests and previous learning and the effect of these on learning' },
@@ -294,17 +294,17 @@ const categories = [
     name: 'GP4',
     content: '',
     sub: [
-      { num: '4.1', heading: 'Performance in teaching and learning process' },
-      { num: '4.2', heading: 'Seeks out and pursues opportunities' },
-      { num: '4.3', heading: 'Maintains higher order functioning' },
+      { num: '4.1', heading: 'Rigorously assesses ones’ performance in the teaching and learning process, collaborates with peers to critically examine ones’ teaching and learning performance, creates a personal plan for improvement and shares successful practices' },
+      { num: '4.2', heading: 'Seeks out and pursues opportunities for improving mastery of content and methodology and builds competences in the use of technology in education.' },
+      { num: '4.3', heading: 'Maintains higher order functioning through strengthening abilities to reason, reflect, make fair judgment, evaluate, analyze and interpret.' },
     ],
   },
   {
     name: 'GP5',
     content: '',
     sub: [
-      { num: '5.1', heading: 'Communicate with parents' },
-      { num: '5.2', heading: 'Community Involvement' },
+      { num: '5.1', heading: 'Communicates with parents/caregivers to stimulate their interest in their children’s progress and reinforce learning, always giving priority interest to the learner' },
+      { num: '5.2', heading: 'Engages community members to build trust, to foster open communication and to work collaboratively with parents to benefit students’ achievement levels' },
       // { num: '5.3', heading: 'Engages parents and community' },
       { num: '5.4', heading: 'Use community creatively as a source of educational experiences' },
     ],
