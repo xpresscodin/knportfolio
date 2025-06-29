@@ -285,7 +285,7 @@ const categories = [
       { num: '3.3', heading: 'Knows the principles of inclusive education and their applications' },
       { num: '3.4', heading: 'Knows the different learning styles and approaches of students' },
       { num: '3.5', heading: 'Knows and understands student skills, interests and previous learning and the effect of these on learning' },
-      { num: '3.6', heading: 'Knows of gender differences and how these affect learning' },
+      // { num: '3.6', heading: 'Knows of gender differences and how these affect learning' },
       { num: '3.7', heading: 'Manages classroom behaviour to enable learning' },
       { num: '3.8', heading: 'Assures and maintains a safe physical and psychological environment' },
     ],
@@ -305,17 +305,17 @@ const categories = [
     sub: [
       { num: '5.1', heading: 'Communicate with parents' },
       { num: '5.2', heading: 'Community Involvement' },
-      { num: '5.3', heading: 'Engages parents and community' },
-      { num: '5.4', heading: 'Professional responsibility ' },
+      // { num: '5.3', heading: 'Engages parents and community' },
+      { num: '5.4', heading: 'Use community creatively as a source of educational experiences' },
     ],
   },
   {
     name: 'GP6',
     content: '',
     sub: [
-      { num: '6.1', heading: 'Acts with the knowledge' },
-      { num: '6.2', heading: 'Teacher has a moral responsibility' },
-      { num: '6.3', heading: 'Commit to the success of learners' },
+      { num: '6.1', heading: 'Modelled positive behaviour and responded positively to constructive criticisms' },
+      { num: '6.2', heading: 'Commits to the success oflearners as individuals andof the institution as a whole' },
+      // { num: '6.3', heading: 'Commit to the success of learners' },
     ],
   },
 ]

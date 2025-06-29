@@ -382,6 +382,15 @@ const projects = [
     title: 'Class collaboration with creative expression',
     blocks: [
       {
+        type: 'paragraph',
+        content: 'Used a variety of methods andsources (such as personal reflection, action research, student questionnaires) to assess instruction in order to advance students’ learning.',
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/groupwork/ACTION RESEARCH REPORT.pdf',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
         type: 'image',
         src: '/assets/images/Taching/4.jpeg',
         alt: 'Rules Poster',
@@ -401,6 +410,16 @@ const projects = [
       {
         type: 'paragraph',
         content: 'Class collaboration with creative expression',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/rev1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/rev2.jpeg',
+        alt: '',
       },
     ]
   },
@@ -1060,11 +1079,6 @@ const projects = [
         type: 'paragraph',
         content: 'Participated in UWI’s national celebration .',
       },
-     
-      {
-        type: 'paragraph',
-        content: 'Image of visiting UWI .',
-      },
       {
         type: 'image',
         src: '/assets/images/GP5/uwi1.jpeg',
@@ -1078,37 +1092,197 @@ const projects = [
     ],
   },
   {
-    id: 19,
-    category: 'GP6',
-    sub: '', // 6.1
-    title: 'GP6',
+    id: 43,
+    category: 'GP5',
+    sub: 'Use community creatively as a source of educational experiences', // 5.4
+    title: '',
     blocks: [
       {
-        type: 'image',
-        src: '/images/community.jpg',
-        alt: 'Community Event',
-      },
-  {
-        type: 'image',
-        src: '/assets/images/Development/9.jpeg',
-        alt: 'Professional Development Team',
-        description: 'Team collaboration during a professional development event.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/10.jpeg',
-        alt: 'Professional Development Gathering',
-        description: 'Gathering of educators at a professional development session.'
-      },
-       {
-        type: 'image',
-        src: '/assets/images/Development/11.jpeg',
-        alt: 'Professional Development Gathering',
-        description: 'Gathering of educators at a professional development session.'
+        type: 'paragraph',
+        content: 'Ambassadors for Inter-American Division`s (IAD) Inter-cultural Mission Project in Chinese communities',
       },
       {
         type: 'paragraph',
-        content: 'Images and descriptions from cleanup drives and volunteer activities.',
+        content: 'Participated in outreach, and cultural exchange workshops.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/7.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/8.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/9.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/10.jpeg',
+        alt: '',
+      },
+       {
+        type: 'image',
+        src: '/assets/images/GP5/11.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Elaborated on air (via several radio channels) about the Inter-American Division outreach and cultural exchange initiative',
+      },
+       {
+        type: 'image',
+        src: '/assets/images/GP5/12.jpeg',
+        alt: '',
+      },
+    ],
+  },
+  
+  {
+    id: 44,
+    category: 'GP6',
+    sub: 'Modelled positive behaviour and responded positively to constructive criticisms', // 6.1
+    title: 'GP6',
+    blocks: [
+      {
+        type: 'paragraph',
+        content: 'Organizing exam scripts.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/13.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Cinco de mayo with co-teacher.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/15.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Collaborating with other departments',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/16.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Assisting to organize students` Art pieces.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/17.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/18.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/19.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'My Department - Modern Languages',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/20.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: '1 ML! Neva 2. ',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/21.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Teachers` Day Event',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/22.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'PD meeting.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/23.jpeg',
+        alt: '',
+      },
+    ],
+  },
+  {
+    id: 45,
+    category: 'GP6',
+    sub: 'Commits to the success oflearners as individuals andof the institution as a whole', // 6.2
+    title: 'GP6',
+    blocks: [
+      {
+        type: 'paragraph',
+        content: 'Participated effectively in teamwork.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Group pics with students.',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/team1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/team2.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Exhibited enthusiasm for and took pride in achieving excellence.',
+      },
+      {
+        type: 'paragraph',
+        content: 'Students feom Pembrook Hall High spent the day with our students in celebration of International Women`s Day',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/2.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/rev1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/rev2.jpeg',
+        alt: '',
       },
     ],
   },
