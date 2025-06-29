@@ -363,6 +363,11 @@ const projects = [
         description: 'Group project.'
       },
       {
+        type: 'image',
+        src: '/assets/images/GP2/groupwork/7.jpeg',
+        description: 'Group project.'
+      },
+      {
         type: 'pdf',
         src: '/assets/images/GP2/groupwork/Grade 7 Sixth Week Alternative Assessment - Easter term 2025 (1).pdf',
         description: 'Group presentation on Spanish culture.'
@@ -640,6 +645,11 @@ const projects = [
         src: '/assets/images/GP3/9.jpeg',
         alt: 'attendance record',
       },
+      {
+        type: 'image',
+        src: '/assets/images/GP3/14.jpeg',
+        alt: 'attendance record',
+      },
     ],
   },
   {
@@ -814,32 +824,60 @@ const projects = [
     id: 14,
     category: 'GP4',
     sub: 'Performance in teaching and learning process', // 4.1
-    title: 'Certification & Licensing',
+    title: 'Development Activities',
+    description: 'Professional development activities that enhance teaching skills and knowledge.',
     blocks: [
-      {
-        type: 'image',
-        src: '/assets/images/Development/uwi1.jpeg',
-        alt: 'Visiting UWI 1',
-      },
-      {
+      { 
         type: 'paragraph',
-        content: 'Image of visiting UWI .',
+        content: 'Engaged in continuous personal assessment of professional skills. Actively participated in and contributed to a learning community of professionals.',
+      },
+      {
+
+        type: 'pdf',
+        src: '/assets/images/GP4/Teacher Registration Pamphlet.pdf',
+        alt: 'Teacher Registration Pamphlet',
+      },
+
+      {
+        type: 'image',
+        src: '/assets/images/GP4/registrationform.jpeg',
+        alt: 'Teacher Registration Form',
       },
       {
         type: 'image',
-        src: '/assets/images/Development/uwi2.jpeg',
-        alt: 'Visiting UWI 2',
+        src: '/assets/images/GP4/4.jpeg',
+        alt: '',
       },
-      {
+      { 
         type: 'paragraph',
-        content: 'Image of visiting UWI .',
+        content: 'Professional Development Session Pictures below',
       },
       {
         type: 'image',
-        src: '/assets/images/Development/5.jpeg',
-        alt: 'Conference 5',
-        description: 'Presenting at an educational conference.'
+        src: '/assets/images/GP4/5.jpeg',
+        alt: '',
       },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/6.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/7.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/8.jpeg',
+        alt: '',
+      },
+      // {
+      //   type: 'image',
+      //   src: '/assets/images/Development/5.jpeg',
+      //   alt: 'Conference 5',
+      //   description: 'Presenting at an educational conference.'
+      // },
       
       {
         type: 'image',
@@ -853,7 +891,204 @@ const projects = [
         alt: 'Professional Development Group',
         description: 'Group photo from a professional development workshop.'
       },
+      
+    ],
+  },
+  {
+    id: 19,
+    category: 'GP4',
+    sub: 'Seeks out and pursues opportunities', // 4.2
+    title: 'Professional Development Activities',
+    blocks: [
       {
+        type: 'paragraph',
+        content: 'Actively involved in core curricular activities that promoted their professional growth and development.', 
+      },
+      {
+        type: 'paragraph',
+        content: 'Below is Modern Languages Day at Immaculate Conception High School', 
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/1.jpeg',
+        description: 'Group presentation on Spanish culture.'
+      },
+
+      {
+        type: 'image',
+        src: '/assets/images/Development/9.jpeg',
+        alt: 'Professional Development Team',
+        description: 'Team collaboration during a professional development event.'
+      },
+     
+      {
+        type: 'paragraph',
+        content: 'Below is Spirit Day Celebration at Immaculate Conception High School', 
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/3.jpeg',
+        description: 'Group presentation on Spanish culture.'
+      },
+      // {
+      //   type: 'image',
+      //   src: '/assets/images/GP4/2.jpeg',
+      //   description: 'Group presentation on Spanish culture.'
+      // },
+    ],
+  },
+{
+    id: 15,
+    category: 'GP4',
+    sub: 'Maintains higher order functioning', // 4.3
+    title: 'Professional Development Activities',
+    blocks: [
+
+      {
+        type: 'paragraph',
+        content: 'Participated in developmental workshops, professional development days’ activities and QEC activities.',
+      },
+     {
+        type: 'image',
+        src: '/assets/images/GP4/9.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/10.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Applied higher order functions in lesson planning and class teaching (5Es and 4Cs of NSC)',
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP1/Cuántos años tienes - simple - complex lesson.pdf',
+        title: 'Cuántos años tienes - simple - complex lesson'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP1/Quién eres tú - From Lower-Order to Higher-Order Thinking.pdf',
+        title: 'Quién eres tú - From Lower-Order to Higher-Order Thinking'
+      },
+      {
+        type: 'paragraph',
+        content: 'Used and evaluated teaching approaches that raised the achievement levels of both boys and girls (where applicable)',
+      },
+      {
+        type: 'paragraph',
+        content: 'Lessons reflecting strengths and weaknesses',
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP4/Cómo eres tú - with reflection.pdf',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP4/Cómo eres tú - follow up lesson with reflection.pdf',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP4/Qué estás haciendo - Present Progressive follow up lesson with reflection.pdf',
+        description: 'Group presentation on Spanish culture.'
+      },
+
+
+
+    ],
+  },
+
+  // === GP5 ===
+  {
+    id: 17,
+    category: 'GP5',
+    sub: 'Communicate with parents', // 5.1
+    title: 'Parent Engagement Activities',
+    blocks: [
+
+      {
+        type: 'paragraph',
+        content: 'Dialogued with parents, guardians and caregivers in the interest of students’ academic progress and welfare',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/2.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/3.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/4.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/5.jpeg',
+        alt: '',
+      },
+     
+    ],
+  },
+  {
+    id: 18,
+    category: 'GP5',
+    sub: 'Community Involvement', // 5.2
+    title: 'Community Service Project',
+    blocks: [
+      {
+        type: 'paragraph',
+        content: 'Involved/participated in community activities/projects, e.g. national celebrations. .',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/6.jpeg',
+        alt: '',
+      },
+      {
+        type: 'paragraph',
+        content: 'Participated in UWI’s national celebration .',
+      },
+     
+      {
+        type: 'paragraph',
+        content: 'Image of visiting UWI .',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/uwi1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP5/uwi2.jpeg',
+        alt: '',
+      },
+    ],
+  },
+  {
+    id: 19,
+    category: 'GP6',
+    sub: '', // 6.1
+    title: 'GP6',
+    blocks: [
+      {
+        type: 'image',
+        src: '/images/community.jpg',
+        alt: 'Community Event',
+      },
+  {
         type: 'image',
         src: '/assets/images/Development/9.jpeg',
         alt: 'Professional Development Team',
@@ -871,145 +1106,12 @@ const projects = [
         alt: 'Professional Development Gathering',
         description: 'Gathering of educators at a professional development session.'
       },
-    ],
-  },
-  {
-    id: 19,
-    category: 'GP4',
-    sub: 'Seeks out and pursues opportunities', // 4.2
-    title: 'Professional Development Activities',
-    blocks: [
-      {
-        type: 'image',
-        src: '/assets/images/GP4/1.jpeg',
-        description: 'Group presentation on Spanish culture.'
-      },
-            {
-        type: 'image',
-        src: '/assets/images/Development/5.jpeg',
-        alt: 'Conference 5',
-        description: 'Presenting at an educational conference.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/6.jpeg',
-        alt: 'Workshop 6',
-        description: 'Workshop on assessment and feedback best practices.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/7.jpeg',
-        alt: 'Professional Development Event',
-        description: 'Participating in a professional development event with colleagues.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/8.jpeg',
-        alt: 'Professional Development Group',
-        description: 'Group photo from a professional development workshop.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/9.jpeg',
-        alt: 'Professional Development Team',
-        description: 'Team collaboration during a professional development event.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/10.jpeg',
-        alt: 'Professional Development Gathering',
-        description: 'Gathering of educators at a professional development session.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/11.jpeg',
-        alt: 'Professional Development Gathering',
-        description: 'Gathering of educators at a professional development session.'
-      },
-      
-      {
-        type: 'image',
-        src: '/assets/images/GP4/3.jpeg',
-        description: 'Group presentation on Spanish culture.'
-      },
-      {
-        type: 'image',
-        src: '/assets/images/GP4/2.jpeg',
-        description: 'Group presentation on Spanish culture.'
-      },
-    ],
-  },
-{
-    id: 15,
-    category: 'GP4',
-    sub: 'Maintains higher order functioning', // 4.3
-    title: 'Professional Development Activities',
-    blocks: [
-     {
-        type: 'pdf',
-        src: '/assets/images/GP2/groupwork/Qué estás haciendo - Present Progressive follow up lesson.pdf',
-        description: 'Group presentation on Spanish culture.'
-      },
-    ],
-  },
-
-  // === GP5 ===
-  {
-    id: 17,
-    category: 'GP5',
-    sub: 'Interaction with parents', // 5.1
-    title: 'Parent Engagement Activities',
-    blocks: [
       {
         type: 'paragraph',
-        content: 'Summary of parent-teacher',
+        content: 'Images and descriptions from cleanup drives and volunteer activities.',
       },
     ],
   },
-  {
-    id: 18,
-    category: 'GP5',
-    sub: 'Community Involvement', // 5.2
-    title: 'Community Service Project',
-    blocks: [
-      
-      {
-        type: 'image',
-        src: '/assets/images/Development/uwi1.jpeg',
-        alt: 'Visiting UWI 1',
-      },
-      {
-        type: 'paragraph',
-        content: 'Image of visiting UWI .',
-      },
-      {
-        type: 'image',
-        src: '/assets/images/Development/uwi2.jpeg',
-        alt: 'Visiting UWI 2',
-      },
-      {
-        type: 'paragraph',
-        content: 'Image of visiting UWI .',
-      },
-    ],
-  },
-  // {
-  //   id: 19,
-  //   category: 'GP6',
-  //   sub: '', // 6.1
-  //   title: 'GP6',
-  //   blocks: [
-  //     {
-  //       type: 'image',
-  //       src: '/images/community.jpg',
-  //       alt: 'Community Event',
-  //     },
-  //     {
-  //       type: 'paragraph',
-  //       content: 'Images and descriptions from cleanup drives and volunteer activities.',
-  //     },
-  //   ],
-  // },
 ]
 
 export default projects
