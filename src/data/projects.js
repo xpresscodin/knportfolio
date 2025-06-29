@@ -64,6 +64,11 @@ const projects = [
         alt: 'Map showing Spanish-speaking countries',
       },
       {
+        type: 'image',
+        src: '/assets/images/GP1/map2.jpeg',
+        alt: 'Map showing Spanish-speaking countries',
+      },
+      {
         type: 'paragraph',
         content: 'Students also got the opportunity to identify/locate Spanish-Speaking countries on a map.'
       },
@@ -96,10 +101,30 @@ const projects = [
     title: 'curriculum structure',
     blocks: [
       {
+        type: 'paragraph',
+        content: 'Designed units that begin with basic vocabulary and sentence structures (e.g., greetings, countries, and nationalities) and build toward complex grammar, reading comprehension, and intercultural communication. Additionally lessons transitions from lower order to higher order thinking.'
+      },
+      {
         type: 'pdf',
         src: '/assets/images/GP1/NSC_Spanish-Grade-7-9-Jan2020.pdf',
         title: 'NSC Spanish Grade 7-9 Curriculum (Jan 2020)'
       },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP1/Report - Educational Theories and Discovery Learning in My Spanish Classroom.pdf',
+        title: 'Report - Educational Theories and Discovery Learning in My Spanish Classroom'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP1/Quién eres tú - From Lower-Order to Higher-Order Thinking.pdf',
+        title: 'Quién eres tú - From Lower-Order to Higher-Order Thinking'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP1/Cuántos años tienes - simple - complex lesson.pdf',
+        title: 'Cuántos años tienes - simple - complex lesson'
+      },
+      
       // No blocks, consider adding relevant content or comment out if not used
     ]
   },
@@ -109,6 +134,21 @@ const projects = [
     sub: 'Relates subject to national development', // 1.4
     title: 'Peer reading moment',
     blocks: [
+      {
+        type: 'docx',
+        src: '/assets/docs/Grade 9 Spanish Easter Term Plan - 2025.docx',
+        title: 'Grade 9 Spanish Easter Term Plan - 2025'
+      },
+      {
+        type: 'docx',
+        src: '/assets/docs/Grade 8 Summer Term Plan April - July 2025.docx',
+        title: 'Grade 8 Summer Term Plan April - July 2025'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/docs/Grade 9 Christmas Term Plan Sept-Dec 2024- updated.pdf',
+        title: 'Grade 9 Christmas Term Plan Sept-Dec 2024 (updated)'
+      },
       // No blocks, consider adding relevant content or comment out if not used
     ]
   },
