@@ -549,36 +549,27 @@ const projects = [
   {
     id: 5,
     category: 'GP3',
-    sub: 'Teachers Incentive to Students', // 3.1
+    sub: 'Knows age and developmental (intellectual, physical, social) characteristics of students', // 3.1
     title: 'Motivational Tools and Student Rewards',
     blocks: [
       {
-        type: 'paragraph',
-        content: 'Includes examples of how teachers use badges, praise, and certificates to encourage student growth.',
+        type: 'pdf',
+        src: '/assets/images/GP3/Cómo eres tú - differentiated.pdf',
+        title: 'Cómo eres tú - differentiated'
       },
-      {
-        type: 'image',
-        src: '/images/incentives.jpg',
-        alt: 'Student Incentives',
-      },
+
     ],
   },
   {
     id: 6,
     category: 'GP3',
-    sub: 'Strategies to Develop Critical Thinking in Students', // 3.2
+    sub: 'Knows diverse factors', // 3.2
     title: 'Building Critical Thinking Skills',
     blocks: [
       {
-        type: 'paragraph',
-        content: 'Methods include Socratic questioning, problem-based learning, and open discussion prompts.',
-      },
-      {
-        type: 'slideshow',
-        images: [
-          '/images/critical-thinking1.jpg',
-          '/images/critical-thinking2.jpg',
-        ],
+        type: 'pdf',
+        src: '/assets/images/GP3/Cómo eres tú - differentiated.pdf',
+        title: ' Cómo eres tú - differentiated'
       },
     ],
   },
