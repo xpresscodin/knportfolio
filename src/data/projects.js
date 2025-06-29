@@ -135,18 +135,18 @@ const projects = [
     title: 'Peer reading moment',
     blocks: [
       {
-        type: 'docx',
-        src: '/assets/docs/Grade 9 Spanish Easter Term Plan - 2025.docx',
+        type: 'pdf',
+        src: '/assets/images/GP1/Grade 9 Spanish Easter Term Plan - 2025.pdf',
         title: 'Grade 9 Spanish Easter Term Plan - 2025'
       },
       {
-        type: 'docx',
-        src: '/assets/docs/Grade 8 Summer Term Plan April - July 2025.docx',
+        type: 'pdf',
+        src: '/assets/images/GP1/Grade 8 Summer Term Plan April - July 2025.pdf',
         title: 'Grade 8 Summer Term Plan April - July 2025'
       },
       {
         type: 'pdf',
-        src: '/assets/docs/Grade 9 Christmas Term Plan Sept-Dec 2024- updated.pdf',
+        src: '/assets/images/GP1/Grade 9 Christmas Term Plan Sept-Dec 2024- updated.pdf',
         title: 'Grade 9 Christmas Term Plan Sept-Dec 2024 (updated)'
       },
       // No blocks, consider adding relevant content or comment out if not used
@@ -193,9 +193,19 @@ const projects = [
   {
     id: 4,
     category: 'GP2',
-    sub: 'Lesson Plans', // 2.1
+    sub: 'Develops in learners critical thinking and creative ways to solve their problem', // 2.1
     title: 'Lesson Plans and more',
     blocks: [
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/Cómo eres tú - with teaching-learning strategies.pdf',
+        title: ''
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/Qué estás haciendo - Present Progressive lesson with teaching strategies.pdf',
+        title: ''
+      },
       {
         type: 'image',
         src: '/assets/images/Teaching/2.jpeg',
@@ -282,40 +292,86 @@ const projects = [
     title: 'Lesson Plans',
     blocks: [
       {
-        type: 'image',
-        src: '/assets/images/Teaching/1.jpeg',
-        alt: 'Rules Poster',
-        description: 'Tracking student progress through emotional, social, and academic indicators.'
+        type: 'paragraph',
+        content: 'Students worked in groups to do cultural presentations on spanish food.'
       },
       {
         type: 'image',
-        src: '/assets/images/Teaching/2.jpeg',
+        src: '/assets/images/GP2/groupwork/3.jpeg',
         alt: 'Rules Poster',
-        description: 'Tracking student progress through emotional, social, and academic indicators.'
+        description: 'Group presentation on Spanish culture.'
       },
       {
         type: 'image',
-        src: '/assets/images/Teaching/3.jpeg',
+        src: '/assets/images/GP2/groupwork/1.jpeg',
         alt: 'Rules Poster',
-        description: 'Tracking student progress through emotional, social, and academic indicators.'
+        description: 'Group presentation on Spanish culture.'
       },
       {
         type: 'image',
-        src: '/assets/images/Teaching/4.jpeg',
+        src: '/assets/images/GP2/groupwork/2.jpeg',
         alt: 'Rules Poster',
-        description: 'Tracking student progress through emotional, social, and academic indicators.'
+        description: 'Group presentation on Spanish culture.'
       },
       {
         type: 'image',
-        src: '/assets/images/Teaching/5.jpeg',
+        src: '/assets/images/GP2/groupwork/4.jpeg',
         alt: 'Rules Poster',
-        description: 'Tracking student progress through emotional, social, and academic indicators.'
+        description: 'Group presentation on Spanish culture.'
       },
       {
         type: 'image',
-        src: '/assets/images/Teaching/6.jpeg',
+        src: '/assets/images/GP2/groupwork/5.jpeg',
         alt: 'Rules Poster',
-        description: 'Tracking student progress through emotional, social, and academic indicators.'
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP2/groupwork/6.jpeg',
+        alt: 'Rules Poster',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Students doing group presentation on Spanish culture.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP2/groupwork/clothes.jpeg',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Interpreted and paced curriculum to meet students learning needs.'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/groupwork/Cómo eres tú - follow up lesson.pdf',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/groupwork/Qué estás haciendo - Present Progressive follow up lesson.pdf',
+        description: 'Group presentation on Spanish culture.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Used projects and/or appropriate activities to facilitate student learning.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP2/groupwork/card.jpeg',
+        description: 'Group project.'
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP2/groupwork/card2.jpeg',
+        description: 'Group project.'
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/groupwork/Grade 7 Sixth Week Alternative Assessment - Easter term 2025 (1).pdf',
+        description: 'Group presentation on Spanish culture.'
       },
       
     ],
@@ -402,6 +458,20 @@ const projects = [
     title: `Develops in learners' critical thinking and creative ways to solve their problem`,
     blocks: [
       {
+        type: 'paragraph',
+        content: 'Demonstrated strategies for development of critical thinking in students.'
+      },
+       {
+        type: 'pdf',
+        src: '/assets/images/GP2/Cómo eres tú - with teaching-learning strategies.pdf',
+        title: ''
+      },
+      {
+        type: 'pdf',
+        src: '/assets/images/GP2/Qué estás haciendo - Present Progressive lesson with teaching strategies.pdf',
+        title: ''
+      },
+      {
         type: 'pdf',
         src: '/assets/images/presentation/_Weeks 2-3 - ¿Quién eres tú_.pdf',
         title: 'Lesson Plan: ¿Quién eres tú?'
@@ -450,7 +520,34 @@ const projects = [
         type: 'pdf',
         src: '/assets/images/presentation/Grade 7 Week 7-9 - ¿Cómo eres tú_.pdf',
         title: 'Lesson Plan: ¿Cómo eres tú? (Grade 7 Week 7-9)'
-      }
+      },
+      {
+        type: 'paragraph',
+        content: 'Facilitated creativity in student engagement.'
+      },
+      {
+        type: 'slideshow',
+        images: [
+          '/assets/images/GP2/1.jpeg',
+          '/assets/images/GP2/2.jpeg',
+          '/assets/images/GP2/6.jpeg',
+          '/assets/images/GP2/4.jpeg',
+          '/assets/images/GP2/5.jpeg'
+        ]
+      },
+      {
+        type: 'slideshow',
+        images: [
+          '/assets/images/Teaching/1.jpeg',
+          '/assets/images/Teaching/2.jpeg',
+          '/assets/images/Teaching/6.jpeg',
+          '/assets/images/Teaching/4.jpeg'
+        ]
+      },
+
+
+
+
     ]
   },
 
