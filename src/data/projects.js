@@ -131,7 +131,7 @@ const projects = [
   {
     id: 23,
     category: 'GP1',
-    sub: 'Relates subject to national development', // 1.4
+    sub: 'Is able to relate subject to national development', // 1.4
     title: 'Peer reading moment',
     blocks: [
       {
