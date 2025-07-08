@@ -977,6 +977,20 @@ const projects = [
         src: '/assets/images/GP4/3.jpeg',
         description: 'Group presentation on Spanish culture.'
       },
+      {
+        type: 'paragraph',
+        content: 'Below are students from Pembrook Hall High spent the day with our students in celebration of International Women`s Day',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/1.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP6/2.jpeg',
+        alt: '',
+      },
       // {
       //   type: 'image',
       //   src: '/assets/images/GP4/2.jpeg',
@@ -1263,7 +1277,7 @@ const projects = [
   {
     id: 45,
     category: 'GP6',
-    sub: 'Commits to the success oflearners as individuals andof the institution as a whole', // 6.2
+    sub: 'Commits to the success of learners as individuals and of the institution as a whole', // 6.2
     title: 'GP6',
     blocks: [
       {
@@ -1287,20 +1301,6 @@ const projects = [
       {
         type: 'paragraph',
         content: 'Exhibited enthusiasm for and took pride in achieving excellence.',
-      },
-      {
-        type: 'paragraph',
-        content: 'Students feom Pembrook Hall High spent the day with our students in celebration of International Women`s Day',
-      },
-      {
-        type: 'image',
-        src: '/assets/images/GP6/1.jpeg',
-        alt: '',
-      },
-      {
-        type: 'image',
-        src: '/assets/images/GP6/2.jpeg',
-        alt: '',
       },
       {
         type: 'image',
