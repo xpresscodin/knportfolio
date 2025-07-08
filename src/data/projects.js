@@ -869,6 +869,34 @@ const projects = [
       },
       { 
         type: 'paragraph',
+        content: 'Self Assessment Form',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/41.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/411.jpeg',
+        alt: '',
+      },
+      { 
+        type: 'paragraph',
+        content: 'Peer evaluation/assessment',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/42.jpeg',
+        alt: '',
+      },
+      {
+        type: 'image',
+        src: '/assets/images/GP4/422.jpeg',
+        alt: '',
+      },
+      { 
+        type: 'paragraph',
         content: 'Professional Development Session Pictures below',
       },
       {
