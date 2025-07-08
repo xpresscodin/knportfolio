@@ -314,7 +314,7 @@ const categories = [
     content: '',
     sub: [
       { num: '6.1', heading: 'Modelled positive behaviour and responded positively to constructive criticisms' },
-      { num: '6.2', heading: 'Commits to the success oflearners as individuals andof the institution as a whole' },
+      { num: '6.2', heading: 'Commits to the success of learners as individuals and of the institution as a whole' },
       // { num: '6.3', heading: 'Commit to the success of learners' },
     ],
   },
