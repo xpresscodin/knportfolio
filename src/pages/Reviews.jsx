@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import EditablePageContent from '../components/site/EditablePageContent';
 
 const SHEET_ID = '11t0od6iK2SiYhpqW71PEaXrkx1-bkREV12cSKdt8NE0';
 const GID = '1911247948';
@@ -36,7 +37,7 @@ export default function Reviews() {
 
   return (
     <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8 mt-8 mb-12">
-      <h1 className="text-4xl font-extrabold text-center text-primary mb-8">Student & Parent Reviews</h1>
+      <EditablePageContent slug="reviews" />
       {loading && <div className="text-center text-gray-500">Loading reviews...</div>}
       {error && <div className="text-center text-red-500">{error}</div>}
       {!loading && !error && reviews.length === 0 && (

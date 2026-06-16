@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+
 import Layout from './components/Layout'
 import About from './pages/About'
 import Resume from './pages/Resume'
@@ -7,9 +8,21 @@ import Portfolio from './pages/Portfolio'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import Reviews from './pages/Reviews'
+
 import SiteRenderer from './components/site/SiteRenderer'
 import AdminApp from './pages/admin/AdminApp'
 import { loadSite } from './lib/site-data/client'
+
+function SiteApp({ mode = 'published' }) {
+  const [site, setSite] = useState(null)
+
+  useEffect(() => {
+    loadSite(mode).then(setSite)
+  }, [mode])
+
+  if (!site) return <p className="p-6">Loading website...</p>
+
+  return <SiteRenderer site={site} preview={mode === 'draft'} />
 
 function DraftPreview() {
   const [site, setSite] = useState(null)
@@ -21,6 +34,7 @@ function DraftPreview() {
   if (!site) return <p className="p-6">Loading website preview...</p>
 
   return <SiteRenderer site={site} preview />
+
 }
 
 export default function App() {
@@ -28,6 +42,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/admin/*" element={<AdminApp />} />
+        <Route path="/preview/*" element={<SiteApp mode="draft" />} />
+        <Route path="*" element={<SiteApp />} />
+
         <Route path="/preview/*" element={<DraftPreview />} />
 
         <Route path="/" element={<Layout />}>
