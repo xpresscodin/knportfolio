@@ -6,6 +6,9 @@ async function setLocal(key,val) { const db=await idb(); return new Promise(res=
 async function api(path, opts={}) { const r = await fetch(path, { headers: { 'Content-Type':'application/json', ...(opts.headers||{}) }, ...opts }); if (!r.ok) throw new Error(await r.text()); return r.json() }
 export async function loadSite(mode='published') { try { return normalizeSite(await api(`/api/site?mode=${mode}`)) } catch { return normalizeSite((await getLocal(mode)) || seedSite) } }
 function normalizeSite(site) { return !site || !site.version || site.version < 3 || !site.profile ? seedSite : site }
+
+
+export async function loadSite(mode='published') { try { return await api(`/api/site?mode=${mode}`) } catch { return (await getLocal(mode)) || seedSite } }
 export async function saveDraft(site) { const next = { ...site, updatedAt: new Date().toISOString(), publishState: { ...site.publishState, hasDraftChanges: true, lastDraftSavedAt: new Date().toISOString() } }; try { await api('/api/site', { method:'POST', body: JSON.stringify({ mode:'draft', site: next }) }) } catch { await setLocal('draft', next) } return next }
 export async function publishSite(site) { const next = { ...site, updatedAt: new Date().toISOString(), publishState: { ...site.publishState, hasDraftChanges: false, lastPublishedAt: new Date().toISOString() } }; try { await api('/api/site', { method:'POST', body: JSON.stringify({ mode:'published', site: next }) }); await api('/api/site', { method:'POST', body: JSON.stringify({ mode:'draft', site: next }) }) } catch { await setLocal('published', next); await setLocal('draft', next) } return next }
 export async function login(password) { return api('/api/auth', { method:'POST', body: JSON.stringify({ password }) }) }
