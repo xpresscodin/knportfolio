@@ -46,7 +46,7 @@ export default function Header() {
             </NavLink>
 
             {item.children?.filter((child) => !child.hidden).length > 0 && (
-              <div className="absolute right-0 z-50 mt-2 hidden min-w-56 rounded-2xl border border-gray-100 bg-white p-2 text-left shadow-xl group-hover:block">
+              <div className="absolute right-0 top-full z-50 hidden min-w-60 pt-2 text-left group-hover:block group-focus-within:block"><div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-xl">
                 {item.children
                   .filter((child) => !child.hidden)
                   .sort((a, b) => (a.order || 0) - (b.order || 0))
@@ -61,7 +61,7 @@ export default function Header() {
                       {child.label}
                     </NavLink>
                   ))}
-              </div>
+              </div></div>
             )}
           </div>
         ))}

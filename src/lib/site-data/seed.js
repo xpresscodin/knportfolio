@@ -112,7 +112,7 @@ export const seedSite = {
     { id: 'nav-contact', label: 'Contact', href: '/contact', linkType: 'internal', target: '_self', hidden: false, order: 4, children: [] },
     { id: 'nav-reviews', label: 'Student Reviews', href: '/reviews', linkType: 'internal', target: '_self', hidden: false, order: 5, children: [] },
   ],
-  navButtons: [button('admin-editor-link', 'Editor Login', '/admin')],
+  navButtons: [],
   media: [...baseMedia, ...generatedMedia],
   pages: [
     { id: 'home', title: 'About Me', slug: 'home', seoTitle: 'About Me', seoDescription: 'Spanish teacher portfolio home page', hidden: false, showInMenu: true, order: 1, background: '', sections: [
