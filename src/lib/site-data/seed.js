@@ -112,6 +112,7 @@ export const seedSite = {
     { id: 'nav-contact', label: 'Contact', href: '/contact', linkType: 'internal', target: '_self', hidden: false, order: 4, children: [] },
     { id: 'nav-reviews', label: 'Student Reviews', href: '/reviews', linkType: 'internal', target: '_self', hidden: false, order: 5, children: [] },
   ],
+  navButtons: [button('admin-editor-link', 'Editor Login', '/admin')],
   navButtons: [],
   media: [...baseMedia, ...generatedMedia],
   pages: [
@@ -141,6 +142,7 @@ export const seedSite = {
     ...projectPages,
   ],
   publishState: { hasDraftChanges: false, lastPublishedAt: now, lastDraftSavedAt: now },
+
 
 export const seedSite = {
   version: 1,

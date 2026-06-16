@@ -1,3 +1,6 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
@@ -17,6 +20,26 @@ function SiteApp({ mode = 'published' }) {
   const [site, setSite] = useState(null)
 
   useEffect(() => {
+    let active = true
+
+    loadSite(mode).then((loadedSite) => {
+      if (active) setSite(loadedSite)
+    })
+
+    return () => {
+      active = false
+    }
+  }, [mode])
+
+  if (!site) {
+    return <p className="p-6">Loading website...</p>
+  }
+
+  return <SiteRenderer site={site} preview={mode === 'draft'} />
+}
+
+function App() {
+
     loadSite(mode).then(setSite)
   }, [mode])
 
@@ -42,6 +65,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/admin/*" element={<AdminApp />} />
+        <Route path="/editor/*" element={<AdminApp />} />
+        <Route path="/preview/*" element={<SiteApp mode="draft" />} />
+        <Route path="*" element={<SiteApp />} />
         <Route path="/preview/*" element={<SiteApp mode="draft" />} />
         <Route path="*" element={<SiteApp />} />
 
@@ -61,6 +87,8 @@ export default function App() {
     </BrowserRouter>
   )
 }
+
+export default App
 import SiteRenderer from './components/site/SiteRenderer'
 import AdminApp from './pages/admin/AdminApp'
 import { loadSite } from './lib/site-data/client'

@@ -59,6 +59,7 @@ export default function SiteRenderer({ site, preview = false }) {
         </div>
       </section>
     </div>
+
 function ThemeVars({ theme }) { const t=theme||{}; return <style>{`:root{--font:${t.globalFont};--heading-font:${t.headingFont};--primary:${t.primaryColor};--button-bg:${t.buttonBackground};--button-text:${t.buttonTextColor};--radius:${t.borderRadius}px} body{font-family:var(--font);color:${t.textColor};background:${t.backgroundColor}} h1,h2,h3{font-family:var(--heading-font)} a{color:${t.linkColor}}`}</style> }
 export default function SiteRenderer({ site, preview=false }) {
   const loc = useLocation(), slug = loc.pathname === '/' ? site.settings.homepageSlug : loc.pathname.replace(/^\//,'')
