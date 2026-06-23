@@ -20,10 +20,19 @@ export default function VisualBuilder({ site, setSite }) {
   const [future, setFuture] = useState([])
   const [busyAction, setBusyAction] = useState('')
   const [toasts, setToasts] = useState([])
+  const [sidebarWidth, setSidebarWidth] = useState(430)
+  const [leftOpen, setLeftOpen] = useState(true)
+  const [rightOpen, setRightOpen] = useState(true)
 
   const selectedPage = useMemo(() => site.pages.find((page) => page.id === selectedPageId) || site.pages[0], [site, selectedPageId])
   const selectedSection = selectedPage?.sections?.find((section) => section.id === selectedSectionId)
   const selectedSectionIndex = selectedPage?.sections?.findIndex((section) => section.id === selectedSectionId) ?? -1
+  const breadcrumb = useMemo(() => {
+    const chain = []
+    let current = selectedPage
+    while (current) { chain.unshift(current.title); current = site.pages.find((page) => page.id === current.parentId) }
+    return chain.join(' > ') || 'No page selected'
+  }, [selectedPage, site.pages])
 
   useEffect(() => { if (!selectedPageId && site.pages[0]) setSelectedPageId(site.pages[0].id) }, [site.pages, selectedPageId])
   useEffect(() => { const beforeUnload = (event) => { if (dirty) { event.preventDefault(); event.returnValue = '' } }; window.addEventListener('beforeunload', beforeUnload); return () => window.removeEventListener('beforeunload', beforeUnload) }, [dirty])
@@ -80,11 +89,11 @@ export default function VisualBuilder({ site, setSite }) {
   function selectMediaForSection(mediaId) { if (!selectedSection) return; updateSection((section) => { if (section.type === 'gallery' || section.type === 'document') section.content.mediaIds = [...new Set([...(section.content.mediaIds || []), mediaId])]; else section.content.imageId = mediaId }); notify('Media selected') }
 
   return <div className="flex h-screen flex-col overflow-hidden bg-[#eef2f7] text-slate-950">
-    <BuilderTopBar site={site} selectedPage={selectedPage} selectedPageId={selectedPageId} setSelectedPageId={setSelectedPageId} addPage={addPage} saveDraft={handleSaveDraft} publish={handlePublish} undo={undo} redo={redo} device={device} setDevice={setDevice} status={status} dirty={dirty} busyAction={busyAction} notify={notify} />
-    <div className="grid min-h-0 flex-1 grid-cols-[320px_minmax(0,1fr)_360px] gap-0">
-      <BuilderLeftSidebar tabs={builderTabs} activeTab={activeTab} setActiveTab={setActiveTab} site={site} selectedPage={selectedPage} selectedPageId={selectedPageId} setSelectedPageId={setSelectedPageId} commit={commit} addPage={addPage} addSection={addSection} selectMediaForSection={selectMediaForSection} notify={notify} />
-      <BuilderCanvas site={site} selectedPage={selectedPage} selectedSectionId={selectedSectionId} setSelectedSectionId={setSelectedSectionId} device={device} addSection={addSection} moveSection={moveSection} duplicateSection={duplicateSection} deleteSection={deleteSection} inlineEdit={inlineEdit} cardAction={cardAction} />
-      <BuilderRightInspector site={site} selectedPage={selectedPage} selectedSection={selectedSection} selectedSectionIndex={selectedSectionIndex} updatePage={updatePage} updateSection={updateSection} moveSection={moveSection} selectMediaForSection={selectMediaForSection} notify={notify} />
+    <BuilderTopBar site={site} selectedPage={selectedPage} selectedPageId={selectedPageId} setSelectedPageId={setSelectedPageId} addPage={addPage} saveDraft={handleSaveDraft} publish={handlePublish} undo={undo} redo={redo} device={device} setDevice={setDevice} status={status} dirty={dirty} busyAction={busyAction} notify={notify} leftOpen={leftOpen} setLeftOpen={setLeftOpen} rightOpen={rightOpen} setRightOpen={setRightOpen} />
+    <div className="relative grid min-h-0 flex-1 gap-0 overflow-hidden" style={{ gridTemplateColumns: `${leftOpen ? sidebarWidth : 76}px minmax(0,1fr) ${rightOpen ? 360 : 0}px` }}>
+      <BuilderLeftSidebar tabs={builderTabs} activeTab={activeTab} setActiveTab={setActiveTab} site={site} selectedPage={selectedPage} selectedPageId={selectedPageId} setSelectedPageId={setSelectedPageId} commit={commit} addPage={addPage} addSection={addSection} selectMediaForSection={selectMediaForSection} notify={notify} width={sidebarWidth} setWidth={setSidebarWidth} leftOpen={leftOpen} setLeftOpen={setLeftOpen} />
+      <BuilderCanvas site={site} selectedPage={selectedPage} selectedSectionId={selectedSectionId} setSelectedSectionId={setSelectedSectionId} device={device} addSection={addSection} moveSection={moveSection} duplicateSection={duplicateSection} deleteSection={deleteSection} inlineEdit={inlineEdit} cardAction={cardAction} breadcrumb={breadcrumb} />
+      {rightOpen && <BuilderRightInspector site={site} selectedPage={selectedPage} selectedSection={selectedSection} selectedSectionIndex={selectedSectionIndex} updatePage={updatePage} updateSection={updateSection} moveSection={moveSection} selectMediaForSection={selectMediaForSection} notify={notify} breadcrumb={breadcrumb} />}
     </div>
     <div className="pointer-events-none fixed bottom-5 right-5 z-[100] space-y-2">{toasts.map((toast) => <div key={toast.id} className={`rounded-2xl px-4 py-3 text-sm font-bold shadow-2xl ring-1 ring-black/10 ${toast.type === 'error' ? 'bg-red-600 text-white' : 'bg-slate-950 text-white'}`}>{toast.message}</div>)}</div>
   </div>
