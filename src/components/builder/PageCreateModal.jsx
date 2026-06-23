@@ -1,0 +1,16 @@
+import { useMemo, useState } from 'react'
+import { Button, Field, TextInput } from './ui.jsx'
+
+const templates = ['Blank page', 'Portfolio page', 'Gallery page', 'Document/PDF page', 'Reviews page', 'Contact page', 'Lesson plan page', 'Artifact page']
+const slugify = (value) => String(value || 'new-page').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'new-page'
+
+export default function PageCreateModal({ pages, defaultParentId = '', mode = 'page', onClose, onCreate }) {
+  const [title, setTitle] = useState(mode === 'subpage' ? 'New Subpage' : 'New Page')
+  const [template, setTemplate] = useState('Blank page')
+  const [parentId, setParentId] = useState(defaultParentId)
+  const [showInMenu, setShowInMenu] = useState(true)
+  const parent = pages.find((page) => page.id === parentId)
+  const slugPreview = useMemo(() => `${parent?.slug ? `${parent.slug}/` : ''}${slugify(title)}`, [parent?.slug, title])
+
+  return <div className="fixed inset-0 z-[120] grid place-items-center bg-slate-950/50 p-4 backdrop-blur-sm"><form onSubmit={(event) => { event.preventDefault(); onCreate({ title, template, parentId, slug: slugPreview, showInMenu }) }} className="w-full max-w-lg rounded-3xl bg-white p-6 shadow-2xl"><div className="mb-5 flex items-start justify-between"><div><p className="text-xs font-black uppercase tracking-[0.25em] text-sky-500">Create</p><h2 className="text-2xl font-black">{mode === 'subpage' ? 'Add Subpage' : 'Add Page'}</h2><p className="text-sm text-slate-500">Choose a template and navigation location.</p></div><button type="button" onClick={onClose} className="rounded-xl px-3 py-2 text-slate-500 transition hover:bg-slate-100 active:scale-95">✕</button></div><div className="space-y-4"><Field label="Page title"><TextInput autoFocus value={title} onChange={(event) => setTitle(event.target.value)} /></Field><Field label="Page type/template"><select className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100" value={template} onChange={(event) => setTemplate(event.target.value)}>{templates.map((item) => <option key={item}>{item}</option>)}</select></Field><Field label="Parent page"><select className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100" value={parentId} onChange={(event) => setParentId(event.target.value)}><option value="">No parent — top-level page</option>{pages.map((page) => <option key={page.id} value={page.id}>{page.title}</option>)}</select></Field><div className="rounded-2xl bg-slate-50 p-3 text-sm"><span className="font-bold text-slate-500">URL preview:</span> <span className="font-black text-slate-950">/{slugPreview}</span></div><label className="flex cursor-pointer items-center justify-between rounded-2xl border border-slate-200 p-3 text-sm font-bold"><span>Show in navigation</span><input type="checkbox" checked={showInMenu} onChange={(event) => setShowInMenu(event.target.checked)} /></label></div><div className="mt-6 flex justify-end gap-2"><Button type="button" tone="light" onClick={onClose}>Cancel</Button><Button type="submit" tone="blue">Create</Button></div></form></div>
+}

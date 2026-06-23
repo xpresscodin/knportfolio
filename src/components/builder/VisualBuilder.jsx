@@ -64,13 +64,26 @@ export default function VisualBuilder({ site, setSite }) {
   function duplicateSection(index) { updatePage((page) => { const copy = clone(page.sections[index]); copy.id = crypto.randomUUID(); copy.title = `${copy.title} copy`; page.sections.splice(index + 1, 0, copy); setSelectedSectionId(copy.id) }); notify('Section duplicated') }
   function deleteSection(index) { updatePage((page) => { page.sections.splice(index, 1); setSelectedSectionId(page.sections[Math.max(0, index - 1)]?.id || '') }); notify('Section deleted') }
   function inlineEdit(sectionId, path, value) { commit((draft) => { const page = draft.pages.find((item) => item.id === selectedPage.id); const section = page.sections.find((item) => item.id === sectionId); setPath(section, path, value) }) }
+  function cardAction(sectionId, action, index) {
+    commit((draft) => {
+      const page = draft.pages.find((item) => item.id === selectedPage.id)
+      const section = page.sections.find((item) => item.id === sectionId)
+      const cards = section.content.cards || []
+      if (action === 'delete') cards.splice(index, 1)
+      if (action === 'duplicate') cards.splice(index + 1, 0, { ...clone(cards[index]), id: crypto.randomUUID(), title: `${cards[index].title} copy` })
+      if (action === 'up' && index > 0) [cards[index - 1], cards[index]] = [cards[index], cards[index - 1]]
+      if (action === 'down' && index < cards.length - 1) [cards[index + 1], cards[index]] = [cards[index], cards[index + 1]]
+      section.content.cards = cards
+    })
+    notify(action === 'delete' ? 'Card deleted' : action === 'duplicate' ? 'Card duplicated' : 'Card moved')
+  }
   function selectMediaForSection(mediaId) { if (!selectedSection) return; updateSection((section) => { if (section.type === 'gallery' || section.type === 'document') section.content.mediaIds = [...new Set([...(section.content.mediaIds || []), mediaId])]; else section.content.imageId = mediaId }); notify('Media selected') }
 
   return <div className="flex h-screen flex-col overflow-hidden bg-[#eef2f7] text-slate-950">
     <BuilderTopBar site={site} selectedPage={selectedPage} selectedPageId={selectedPageId} setSelectedPageId={setSelectedPageId} addPage={addPage} saveDraft={handleSaveDraft} publish={handlePublish} undo={undo} redo={redo} device={device} setDevice={setDevice} status={status} dirty={dirty} busyAction={busyAction} notify={notify} />
     <div className="grid min-h-0 flex-1 grid-cols-[320px_minmax(0,1fr)_360px] gap-0">
       <BuilderLeftSidebar tabs={builderTabs} activeTab={activeTab} setActiveTab={setActiveTab} site={site} selectedPage={selectedPage} selectedPageId={selectedPageId} setSelectedPageId={setSelectedPageId} commit={commit} addPage={addPage} addSection={addSection} selectMediaForSection={selectMediaForSection} notify={notify} />
-      <BuilderCanvas site={site} selectedPage={selectedPage} selectedSectionId={selectedSectionId} setSelectedSectionId={setSelectedSectionId} device={device} addSection={addSection} moveSection={moveSection} duplicateSection={duplicateSection} deleteSection={deleteSection} inlineEdit={inlineEdit} />
+      <BuilderCanvas site={site} selectedPage={selectedPage} selectedSectionId={selectedSectionId} setSelectedSectionId={setSelectedSectionId} device={device} addSection={addSection} moveSection={moveSection} duplicateSection={duplicateSection} deleteSection={deleteSection} inlineEdit={inlineEdit} cardAction={cardAction} />
       <BuilderRightInspector site={site} selectedPage={selectedPage} selectedSection={selectedSection} selectedSectionIndex={selectedSectionIndex} updatePage={updatePage} updateSection={updateSection} moveSection={moveSection} selectMediaForSection={selectMediaForSection} notify={notify} />
     </div>
     <div className="pointer-events-none fixed bottom-5 right-5 z-[100] space-y-2">{toasts.map((toast) => <div key={toast.id} className={`rounded-2xl px-4 py-3 text-sm font-bold shadow-2xl ring-1 ring-black/10 ${toast.type === 'error' ? 'bg-red-600 text-white' : 'bg-slate-950 text-white'}`}>{toast.message}</div>)}</div>
