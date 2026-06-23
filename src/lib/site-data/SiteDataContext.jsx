@@ -4,13 +4,14 @@ import { seedSite } from './seed'
 
 const SiteDataContext = createContext({ site: seedSite, loading: true })
 
-export function SiteDataProvider({ children }) {
+export function SiteDataProvider({ children, mode = 'published' }) {
   const [site, setSite] = useState(seedSite)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     let alive = true
-    loadSite('published')
+    setLoading(true)
+    loadSite(mode)
       .then((loaded) => {
         if (alive && loaded) setSite(loaded)
       })
@@ -20,7 +21,7 @@ export function SiteDataProvider({ children }) {
     return () => {
       alive = false
     }
-  }, [])
+  }, [mode])
 
   const value = useMemo(() => ({ site, loading }), [site, loading])
   return <SiteDataContext.Provider value={value}>{children}</SiteDataContext.Provider>
