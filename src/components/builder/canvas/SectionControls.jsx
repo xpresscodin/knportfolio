@@ -1,0 +1,3 @@
+export default function SectionControls({ index, count, onMoveUp, onMoveDown, onDuplicate, onDelete }) {
+  return <div className="absolute right-4 top-4 z-20 hidden overflow-hidden rounded-2xl bg-slate-950 text-xs font-bold text-white shadow-xl group-hover:flex"><button disabled={index <= 0} onClick={onMoveUp} className="px-3 py-2 disabled:opacity-30">↑</button><button disabled={index >= count - 1} onClick={onMoveDown} className="px-3 py-2 disabled:opacity-30">↓</button><button onClick={onDuplicate} className="px-3 py-2">Duplicate</button><button onClick={onDelete} className="bg-red-600 px-3 py-2">Delete</button></div>
+}

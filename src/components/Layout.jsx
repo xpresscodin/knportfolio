@@ -2,7 +2,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div className="min-h-screen w-full px-4 py-10 flex justify-center items-start bg-gradient-to-br from-[#fdf4ff] to-[#ecf0ff]">
 //       <div className="max-w-7xl w-full flex flex-col md:flex-row gap-6">
@@ -16,7 +16,7 @@
 //         <main className="w-full bg-white rounded-2xl shadow-xl p-6 min-h-[500px]">
 //           <Header />
 //           <div className="mt-6">
-//             <Outlet />
+//             {children || <Outlet />}
 //           </div>
 //         </main>
 
@@ -28,7 +28,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div className="bg-gradient-to-br from-[#fdf4ff] to-[#ecf0ff] min-h-screen w-full flex justify-center px-4 py-10">
 //       <div className="max-w-7xl w-full flex flex-col md:flex-row gap-6">
@@ -47,7 +47,7 @@
 
 //           {/* Main Content Card */}
 //           <main className="bg-white rounded-xl shadow-lg p-6">
-//             <Outlet />
+//             {children || <Outlet />}
 //           </main>
 //         </section>
 //       </div>
@@ -58,7 +58,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div className="bg-gradient-to-br from-[#fdf4ff] to-[#ecf0ff] min-h-screen w-full flex justify-center px-4 pt-20 pb-10">
 //       <div className="max-w-7xl w-full flex flex-col md:flex-row gap-6">
@@ -76,7 +76,7 @@
 
 //           {/* Page Content */}
 //           <main className="bg-white rounded-xl shadow-lg p-6">
-//             <Outlet />
+//             {children || <Outlet />}
 //           </main>
 //         </section>
 //       </div>
@@ -87,7 +87,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div className="bg-gradient-to-br from-[#fdf4ff] to-[#ecf0ff] min-h-screen w-full flex justify-center px-4 pt-24 pb-10 relative">
 //       <div className="max-w-7xl w-full flex gap-6">
@@ -110,7 +110,7 @@
 
 //           {/* Scrollable Main Content */}
 //           <main className="bg-white rounded-xl shadow-lg p-6 min-h-[500px]">
-//             <Outlet />
+//             {children || <Outlet />}
 //           </main>
 //         </section>
 //       </div>
@@ -121,7 +121,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div
 //       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-20 pb-10"
@@ -147,7 +147,7 @@
 
 //             {/* ✅ Content below menu */}
 //             <div className="mt-6">
-//               <Outlet />
+//               {children || <Outlet />}
 //             </div>
 //           </div>
 //         </section>
@@ -160,7 +160,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div
 //       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-28 pb-10"
@@ -194,7 +194,7 @@
                 
 //               </h1>
 //               <div className="flex-1">
-//                 <Outlet />
+//                 {children || <Outlet />}
 //               </div>
 //             </div>
 //           </div>
@@ -208,7 +208,7 @@
 // import Header from './Header'
 // import { Outlet } from 'react-router-dom'
 
-// export default function Layout() {
+// export default function Layout({ children }) {
 //   return (
 //     <div
 //       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-28 pb-10"
@@ -246,7 +246,7 @@
 //                 {/* Page-specific titles */}
 //               </h1>
 //               <div className="flex-1">
-//                 <Outlet />
+//                 {children || <Outlet />}
 //               </div>
 //             </div>
 
@@ -260,7 +260,7 @@ import Sidebar from './Sidebar'
 import Header from './Header'
 import { Outlet } from 'react-router-dom'
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <div
       className="bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] min-h-screen w-full flex justify-center px-4 pt-28 pb-10"
@@ -299,7 +299,7 @@ export default function Layout() {
                 {/* Dynamic page titles here if needed */}
               </h1>
               <div className="flex-1">
-                <Outlet />
+                {children || <Outlet />}
               </div>
             </div>
 
