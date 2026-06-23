@@ -1,0 +1,4 @@
+import EditableSection from './EditableSection'
+export default function CanvasRenderer({ site, page, selectedSectionId, setSelectedSectionId, moveSection, duplicateSection, deleteSection, inlineEdit }) {
+  return <div className="bg-white" style={{ background: page?.background || site.theme.pageBackground }}>{page?.sections?.map((section, index) => <EditableSection key={section.id} site={site} section={section} index={index} count={page.sections.length} selected={selectedSectionId === section.id} onSelect={() => setSelectedSectionId(section.id)} onMoveUp={() => moveSection(index, index - 1)} onMoveDown={() => moveSection(index, index + 1)} onDuplicate={() => duplicateSection(index)} onDelete={() => deleteSection(index)} moveSection={moveSection} inlineEdit={(path, value) => inlineEdit(section.id, path, value)} />)}</div>
+}

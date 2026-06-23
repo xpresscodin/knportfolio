@@ -1,0 +1,5 @@
+import { Field, TextInput } from './ui.jsx'
+export default function ThemePanel({ site, commit }) {
+  const colors = ['primaryColor', 'secondaryColor', 'backgroundColor', 'pageBackground', 'headerBackground', 'buttonBackground', 'buttonTextColor']
+  return <div className="mt-5 space-y-4">{colors.map((key) => <Field key={key} label={key}><TextInput type="color" value={site.theme[key] || '#000000'} onChange={(event) => commit((draft) => { draft.theme[key] = event.target.value })} /></Field>)}<Field label="Font family"><TextInput value={site.theme.globalFont || ''} onChange={(event) => commit((draft) => { draft.theme.globalFont = event.target.value })} /></Field><Field label="Section spacing scale"><TextInput type="number" value={site.theme.spacingScale || 1} onChange={(event) => commit((draft) => { draft.theme.spacingScale = Number(event.target.value) })} /></Field><Field label="Border radius"><TextInput type="number" value={site.theme.borderRadius || 18} onChange={(event) => commit((draft) => { draft.theme.borderRadius = Number(event.target.value) })} /></Field></div>
+}

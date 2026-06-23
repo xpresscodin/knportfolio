@@ -1,0 +1,6 @@
+export const clone = (value) => JSON.parse(JSON.stringify(value))
+export function Button({ children, tone = 'dark', className = '', ...props }) { const tones = { dark: 'bg-slate-950 text-white', light: 'border border-slate-200 bg-white text-slate-700', ghost: 'bg-white/10 text-white', green: 'bg-emerald-600 text-white', red: 'bg-red-600 text-white', blue: 'bg-sky-600 text-white' }; return <button {...props} className={`rounded-xl px-3 py-2 text-sm font-bold transition hover:-translate-y-0.5 hover:shadow ${tones[tone]} ${className}`}>{children}</button> }
+export function Field({ label, children }) { return <label className="block"><span className="mb-1 block text-[11px] font-black uppercase tracking-wide text-slate-500">{label}</span>{children}</label> }
+export function TextInput(props) { return <input {...props} className={`w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:border-sky-500 ${props.className || ''}`} /> }
+export function TextArea(props) { return <textarea {...props} className="min-h-24 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:border-sky-500" /> }
+export function setPath(obj, path, value) { const parts = path.split('.'); let cur = obj; parts.slice(0, -1).forEach((part) => { cur = cur[part] }); cur[parts.at(-1)] = value }
